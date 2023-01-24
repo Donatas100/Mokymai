@@ -14,17 +14,24 @@
       throughout the ear
     </p>
     <p>Please mote that the following events are free to members:</p>
+
     <ul>
-      <li>A Poetic Perspective</li>
-      <li>Walt whitman at War</li>
-      <li>Found Poems and Outsider Poetry</li>
+      <li><img src="1.jpg" alt="pliusas" />A Poetic Perspective</li>
+      <li><img src="1.jpg" alt="pliusas" />Walt whitman at War</li>
+      <li><img src="1.jpg" alt="pliusas" />Found Poems and Outsider Poetry</li>
     </ul>
+    <!--    <ul>
+<li><span>+</span></li>
+<li><span>+</span></li>
+<li><span>+</span></li>
+    </ul> -->
+
     <table>
       <tr>
-        <th></th>
+        <th class="firstCell"></th>
         <th>New York</th>
         <th>Chicago</th>
-        <th>San Francisco</th>
+        <th class="fourthCell">San Francisco</th>
       </tr>
       <tr>
         <td>A Poetic Perspective</td>
@@ -90,29 +97,35 @@
     <form>
       <fieldset>
         <legend><i>Register your interest</i></legend>
-        <p>
-          <label>Your name: <input name="firstName" /></label>
-          <br />
+        <div>
+          <label>Your name: </label>
+          <input name="firstName" />
+        </div>
+        <div>
           <label>Your email: <input name="email" /></label>
-        </p>
-        <p>
-          Your closest center:
-          <select name="format" id="format">
+        </div>
+        <div>
+          <label for="cities">Your closest center: </label>
+          <select name="cities">
             <option selected disabled>New York</option>
-            <option value="LT">Lietuva</option>
-            <option value="LV">Latvija</option>
+            <option value="Chikago">Lietuva</option>
+            <option value="Sanfrancisco">Latvija</option>
           </select>
-        </p>
-
-        <p>
-          Are you a member? :
-          <label><input type="radio" name="areMember" value="Yes" /> Yes</label>
-          <label><input type="radio" name="areMember" value="No" /> No</label>
-        </p>
+        </div>
+        <div class="tarkim">
+          <label>Are you a member? :</label>
+          <div>
+            <input type="radio" name="areMember" value="Yes" />
+            <span>Yes</span>
+          </div>
+          <div>
+            <input type="radio" name="areMember" value="No" />
+            <span>No</span>
+          </div>
+        </div>
       </fieldset>
-      <p>
-        <button type="register">Register</button>
-      </p>
+
+      <button type="register">Register</button>
     </form>
   </body>
 </html>
