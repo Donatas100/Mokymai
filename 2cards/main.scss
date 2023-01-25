@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+// mano----------------------
+
+header {
+  background-color: gainsboro;
+  color: white;
+}
+header {
+  // width: 60%;
+  // display: inline-block;
+  position: relative;
+}
+nav {
+  // display: inline-block;
+  // font-size: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+label {
+  font-size: 15px;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(128, 0, 0);
+}
+label:nth-child(1) {
+  background-color: green;
+}
+
+label:nth-child(2) {
+  background-color: rgb(85, 89, 102);
+}
+label:nth-child(3) {
+  background-color: rgb(184, 125, 21);
+}
+label:nth-child(4) {
+  background-color: rgb(163, 31, 31);
+}
+
+body {
+  background-color: gainsboro;
+}
+body > div {
+  padding-top: 20px;
+  width: 40%;
+  margin: 0 auto;
+}
+body > div > div {
+  margin: 20px 0px 0px 20px;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  display: inline-block;
+  // width: 30%;
+  // display: block;
+  // margin: 0 auto;
+}
+
+h1 {
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: blue;
+}
+h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+p {
+  padding-top: 20px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: blue;
+  color: white;
+  padding: 10px 10px 10px 10px;
+}
+
+body > div > div:nth-child(2) {
+  h1 {
+    color: red;
+  }
+  button {
+    background-color: red;
+  }
+}
