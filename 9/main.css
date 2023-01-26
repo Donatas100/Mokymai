@@ -143,27 +143,9 @@ body {
 }
 
 body > div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-  font-size: 0;
-}
-
-div > div {
-  display: inline-block;
-  width: 300px;
-  vertical-align: middle;
-  margin-bottom: 250px;
-  margin-right: 50px;
-  text-align: left;
-}
-
-form {
-  display: inline-block;
-  width: 250px;
+  width: 50%;
+  margin-top: 200px;
+  margin-left: 200px;
 }
 
 h1 {
@@ -172,30 +154,15 @@ h1 {
   font-weight: bold;
 }
 
-p {
-  color: rgb(141, 141, 141);
-  font-size: 15px;
-  margin-top: 10px;
-}
-
-input {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 50px 10px 0px;
-}
-
-input:nth-child(3) {
-  padding: 10px 50px 50px 0px;
-}
-
-.jungtukas {
-  margin-top: 10px;
-  padding: 10px 60px 10px 60px;
+button {
   background-color: orange;
   color: white;
-  border: 0;
+  border: none;
+  padding: 10px 10px 10px 10px;
+  margin-top: 30px;
 }
 
-div > form > p {
-  margin-left: 10px;
+p {
+  color: gray;
+  margin-top: 30px;
 }/*# sourceMappingURL=main.css.map */
