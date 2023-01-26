@@ -133,8 +133,7 @@ table {
   border-spacing: 0;
 }
 
-body {
-  height: 30vh;
+body > div {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -142,9 +141,10 @@ body {
   height: 100vh;
 }
 
-body > div {
+body > div > div {
+  position: absolute;
   width: 50%;
-  margin-top: 200px;
+  margin-top: 100px;
   margin-left: 200px;
 }
 
