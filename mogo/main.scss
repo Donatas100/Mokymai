@@ -148,14 +148,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     @media screen and (max-width: 1200px) {
-      width: 100vh;
+      width: 100vw;
     }
 
     .content-container {
-      width: 1200px;
+      max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
-      height: 100%;
+      height: 900px;
+
       .header-container {
         clear: both;
         display: block;
@@ -172,16 +173,41 @@ body {
           color: white;
           font-weight: bold;
           font-size: 1.9rem;
-          width: 5%;
           font-family: "Montserrat", sans-serif;
+          width: 100px;
+          text-align: left;
+          @media screen and (max-width: 480px) {
+            font-size: 1.3rem;
+          }
         }
         nav {
           margin-top: 40px;
           display: inline-block;
           margin-left: 40px;
-
-          width: 90%;
+          width: calc(100% - 160px);
           text-align: right;
+          @media screen and (max-width: 800px) {
+            margin-top: 20px;
+            display: block;
+            margin-left: 0px;
+            width: 100%;
+          }
+          .navigation-break {
+            display: none;
+          }
+          @media screen and (max-width: 800px) {
+            margin-top: 20px;
+            display: block;
+            margin-left: 0px;
+            width: 100%;
+          }
+          @media screen and (max-width: 600px) {
+            .navigation-break {
+              display: block;
+            }
+            text-align: left;
+          }
+
           a {
             font-size: 15px;
             margin: 20px;
@@ -190,6 +216,7 @@ body {
             font-family: "Montserrat", sans-serif;
             font-size: 0.9rem;
           }
+
           a:hover {
             color: rgb(252, 227, 138);
             border-bottom: 3px solid rgb(252, 227, 138);
@@ -203,7 +230,7 @@ body {
         text-align: center;
 
         .header-heading-main {
-          width: 900px;
+          width: 70%;
           margin-left: auto;
           margin-right: auto;
           color: white;
@@ -211,9 +238,23 @@ body {
           font-family: "Kaushan Script", cursive;
           font-size: 4.7rem;
           display: inline-block;
+          @media screen and (max-width: 720px) {
+            font-size: 3rem;
+            margin-top: 100px;
+          }
+          @media screen and (max-width: 600px) {
+            margin-top: 80px;
+          }
+          @media screen and (max-width: 480px) {
+            font-size: 2rem;
+          }
+          @media screen and (max-width: 360px) {
+            font-size: 1.5rem;
+          }
         }
+
         .header-heading-subheading {
-          width: 900px;
+          width: 70%;
           margin-top: 42px;
           margin-left: auto;
           margin-right: auto;
@@ -222,6 +263,18 @@ body {
           font-size: 9.4rem;
           color: white;
           line-height: 85%;
+          @media screen and (max-width: 1200px) {
+            font-size: 6rem;
+          }
+          @media screen and (max-width: 720px) {
+            font-size: 4rem;
+          }
+          @media screen and (max-width: 480px) {
+            font-size: 3rem;
+          }
+          @media screen and (max-width: 360px) {
+            font-size: 2rem;
+          }
         }
         hr {
           margin-top: 60px;
@@ -230,6 +283,9 @@ body {
           color: white;
           background-color: white;
           border: none;
+          @media screen and (max-width: 480px) {
+            margin-top: 30px;
+          }
         }
         button {
           margin-top: 35px;
@@ -239,21 +295,33 @@ body {
           color: white;
           border: 4px solid white;
           box-shadow: none;
+          @media screen and (max-width: 610px) {
+            margin-bottom: 30px;
+          }
         }
       }
       .below-content {
         font-size: 0;
         margin-left: 20px;
+        @media screen and (max-width: 610px) {
+          margin-top: 20px;
+          text-align: center;
+        }
         .animation-content {
           margin-top: 60px;
           display: inline-block;
           width: 25%;
           text-align: left;
-
+          @media screen and (max-width: 610px) {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+          }
           .progress {
             position: relative;
             height: 4px;
-            width: 280px;
+            width: calc(100% - 20px);
             border: none;
             background-color: white;
           }
@@ -344,45 +412,40 @@ body {
         position: relative;
         margin-top: 100px;
 
-        text-align: center;
         font-size: 0;
 
-        .intro-img {
+        .img-first-layer {
           display: inline-block;
           width: 33.33%;
+          position: relative;
+          background-color: red;
         }
 
-        .intro-img:nth-child(1) {
+        .img-background-image-1 {
           text-align: left;
         }
-        .intro-img:nth-child(2) {
+        .img-background-image-2 {
           text-align: middle;
         }
-        .intro-img:nth-child(3) {
+        .img-background-image-3 {
           text-align: right;
         }
 
-        img {
-          max-width: 380px;
-        }
-        .overlay {
+        .img-owerlay {
           position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
+
           height: 260px;
           width: 380px;
           opacity: 0;
-          transition: 0.3s ease;
-          background-color: white;
+
           background-image: linear-gradient(rgba(255, 255, 255, 0.816));
           background-image: linear-gradient(
             rgba(255, 0, 0, 0.8),
             rgba(255, 179, 0, 0.8)
           );
         }
-        .icon {
+        .img-icon {
+          opacity: 0;
           color: white;
           font-size: 100px;
           position: absolute;
@@ -391,14 +454,24 @@ body {
           transform: translate(-50%, -50%);
           text-align: center;
         }
-        .intro-img:hover .overlay {
+
+        .img-background-image {
+          background-image: url("Pictures/Layer 44.jpg");
+          background-color: blue;
+          width: 380px;
+          height: 260px;
+        }
+        .img-background-image:hover .img-owerlay {
           opacity: 0.5;
         }
-        //
-        // background-size: cover;
-        // background-repeat: no-repeat;
-        // background-position: center;
+        .img-background-image:hover .img-icon {
+          opacity: 1;
+        }
       }
+      //
+      // background-size: cover;
+      // background-repeat: no-repeat;
+      // background-position: center;
     }
   }
 }
