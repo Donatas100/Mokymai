@@ -145,6 +145,13 @@ body .background {
   height: 900px;
   text-align: center;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1200px) {
+  body .background {
+    width: 100vh;
+  }
 }
 body .background .content-container {
   width: 1200px;
@@ -167,7 +174,7 @@ body .background .content-container .header-container .logo {
   margin-top: 28px;
   color: white;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 1.9rem;
   width: 5%;
   font-family: "Montserrat", sans-serif;
 }
@@ -184,7 +191,7 @@ body .background .content-container .header-container nav a {
   text-decoration: none;
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 body .background .content-container .header-container nav a:hover {
   color: rgb(252, 227, 138);
@@ -202,7 +209,7 @@ body .background .content-container .center-content .header-heading-main {
   color: white;
   margin-top: 180px;
   font-family: "Kaushan Script", cursive;
-  font-size: 72px;
+  font-size: 4.7rem;
   display: inline-block;
 }
 body .background .content-container .center-content .header-heading-subheading {
@@ -212,7 +219,7 @@ body .background .content-container .center-content .header-heading-subheading {
   margin-right: auto;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 150px;
+  font-size: 9.4rem;
   color: white;
   line-height: 85%;
 }
@@ -292,7 +299,7 @@ body .background .content-container .below-content .animation-content .animation
 body .background .content-container .below-content .animation-content .animation-text h3 {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: white;
   margin-right: 5px;
@@ -300,7 +307,7 @@ body .background .content-container .below-content .animation-content .animation
 body .background .content-container .below-content .animation-content .animation-text p {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 1.1rem;
   color: white;
   font-weight: 100;
 }
