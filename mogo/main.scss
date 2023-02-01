@@ -132,7 +132,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-////////mano////////////////////
+////////FIRST PAGE/////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
 body {
   text-align: center;
 
@@ -254,7 +256,7 @@ body {
           display: inline-block;
           @media screen and (max-width: 720px) {
             font-size: 3rem;
-            margin-top: 100px;
+            margin-top: 130px;
           }
           @media screen and (max-width: 600px) {
             margin-top: 80px;
@@ -291,7 +293,7 @@ body {
           }
         }
         hr {
-          margin-top: 60px;
+          margin-top: 40px;
           height: 4px;
           width: 70px;
           color: white;
@@ -302,7 +304,7 @@ body {
           }
         }
         button {
-          margin-top: 35px;
+          margin-top: 40px;
           padding: 10px 30px 10px 30px;
           text-decoration: none;
           background-color: rgba(255, 255, 255, 0);
@@ -317,10 +319,11 @@ body {
       .below-content {
         font-size: 0;
         margin-left: 20px;
-        @media screen and (max-width: 610px) {
-          margin-top: 20px;
+        @media screen and (max-width: 720px) {
+          margin-top: 100px;
           text-align: center;
         }
+
         .animation-content {
           margin-top: 60px;
           display: inline-block;
@@ -388,7 +391,9 @@ body {
       }
     }
   }
-  /////////////////////////////////////////antras lapas
+  ////////STORY/////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////
   .white-background {
     .content-container {
       max-width: 1200px;
@@ -400,15 +405,17 @@ body {
         margin-top: 70px;
         font-family: "Kaushan Script", cursive;
         font-size: 24px;
+        color: rgb(51, 51, 51);
       }
       .intro-h2 {
         margin-top: 20px;
         font-family: "Montserrat", sans-serif;
         font-size: 30px;
         font-weight: bold;
+        color: rgb(51, 51, 51);
       }
       hr {
-        margin-top: 60px;
+        margin-top: 40px;
         height: 3px;
         width: 70px;
         color: red;
@@ -418,13 +425,11 @@ body {
       p {
         display: inline-block;
         width: 70%;
-        margin-top: 60px;
+        margin-top: 40px;
         font-family: "roboto", sans-serif;
         font-size: 15px;
         color: rgb(153, 153, 153);
-        @media screen and (max-width: 900px) {
-          margin-top: 50px;
-        }
+        line-height: 1.5;
       }
       .intro-pictures {
         position: relative;
@@ -440,10 +445,10 @@ body {
           width: 33.33%;
           position: relative;
           text-align: center;
-          @media screen and (max-width: 620px) {
+          @media screen and (max-width: 650px) {
             display: inline-block;
             width: 100%;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
           }
         }
 
@@ -498,7 +503,7 @@ body {
           );
         }
         .img-owerlay {
-          position: absolute;
+          position: relative;
 
           width: 100%;
           height: 100%;
@@ -565,11 +570,9 @@ body {
       }
     }
   }
-  //
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center;
-
+  ////////GREEN PAGE////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////
   .blue-background {
     margin-top: 110px;
     background-color: rgb(149, 225, 211);
@@ -584,6 +587,9 @@ body {
       text-align: center;
       height: 270px;
       font-size: 0;
+      @media screen and (max-width: 900px) {
+        height: 200px;
+      }
 
       .content-box {
         position: relative;
@@ -593,10 +599,10 @@ body {
         border-right: solid 1px white;
 
         div {
+          display: inline-block;
           position: absolute;
           top: 50%;
           left: 50%;
-          -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
           width: 100%;
           h1 {
@@ -604,11 +610,37 @@ body {
             font-weight: bold;
             font-size: 4.5rem;
             color: white;
-            @media screen and (max-width: 650px) {
+            @media screen and (max-width: 1000px) {
               font-size: 3rem;
             }
+
             @media screen and (max-width: 400px) {
               font-size: 2rem;
+            }
+          }
+          @media screen and (max-width: 696px) {
+            .blue-background-h1-1 {
+              margin-top: 10px;
+            }
+          }
+          @media screen and (max-width: 492px) {
+            .blue-background-h1-3 {
+              margin-top: 10px;
+            }
+          }
+          @media screen and (max-width: 469px) {
+            .blue-background-h1-4 {
+              margin-top: 10px;
+            }
+          }
+          @media screen and (max-width: 425px) {
+            .blue-background-h1-2 {
+              margin-top: 10px;
+            }
+          }
+          @media screen and (max-width: 384px) {
+            .blue-background-h1-1 {
+              margin-top: 22px;
             }
           }
 
@@ -617,8 +649,8 @@ body {
             font-size: 0.9rem;
             color: white;
             width: 100%;
-            @media screen and (max-width: 400px) {
-              font-size: 0.4rem;
+            @media screen and (max-width: 900px) {
+              font-size: 0.7rem;
             }
           }
         }
@@ -628,6 +660,10 @@ body {
       }
     }
   }
+
+  ////////WHAT WE DO/////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////
   .white-background2 {
     .content-container {
       max-width: 1200px;
@@ -640,15 +676,17 @@ body {
         margin-top: 100px;
         font-family: "Kaushan Script", cursive;
         font-size: 24px;
+        color: rgb(51, 51, 51);
       }
       .intro-h2 {
         margin-top: 20px;
         font-family: "Montserrat", sans-serif;
         font-size: 30px;
         font-weight: bold;
+        color: rgb(51, 51, 51);
       }
       hr {
-        margin-top: 60px;
+        margin-top: 40px;
         height: 3px;
         width: 70px;
         color: red;
@@ -656,7 +694,7 @@ body {
         border: none;
       }
       .sevices {
-        margin-top: 60px;
+        margin-top: 40px;
         font-size: 0;
         width: 100%;
         display: block;
@@ -706,10 +744,12 @@ body {
             color: black;
             text-align: left;
             h3 {
-              margin-top: 20px;
+              margin-top: 23px;
               margin-left: 20px;
               font-family: "Montserrat", sans-serif;
               font-size: 14px;
+              font-weight: bold;
+              color: rgb(51, 51, 51);
             }
 
             p {
@@ -718,6 +758,7 @@ body {
               margin-left: 20px;
               font-family: "roboto", sans-serif;
               font-size: 14px;
+              line-height: 1.5;
             }
           }
         }
@@ -735,6 +776,10 @@ body {
       }
     }
   }
+
+  ////////FOR ALL DEVCES/////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////
   .mauntain-background {
     background-image: url("Pictures/uniqe/Layer 45.jpg");
     background-size: cover;
@@ -765,15 +810,17 @@ body {
         margin-top: 100px;
         font-family: "Kaushan Script", cursive;
         font-size: 24px;
+        color: rgb(51, 51, 51);
       }
       .intro-h2 {
         margin-top: 20px;
         font-family: "Montserrat", sans-serif;
         font-size: 30px;
         font-weight: bold;
+        color: rgb(51, 51, 51);
       }
       hr {
-        margin-top: 60px;
+        margin-top: 40px;
         height: 3px;
         width: 70px;
         color: red;
@@ -806,6 +853,10 @@ body {
       }
     }
   }
+
+  ////////SERVICE////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////
   .white-background3 {
     .content-container4 {
       max-width: 1200px;
@@ -818,15 +869,17 @@ body {
         margin-top: 100px;
         font-family: "Kaushan Script", cursive;
         font-size: 24px;
+        color: rgb(51, 51, 51);
       }
       .intro-h2 {
         margin-top: 20px;
         font-family: "Montserrat", sans-serif;
         font-size: 30px;
         font-weight: bold;
+        color: rgb(51, 51, 51);
       }
       hr {
-        margin-top: 60px;
+        margin-top: 40px;
         height: 3px;
         width: 70px;
         color: red;
@@ -836,12 +889,256 @@ body {
       p {
         display: inline-block;
         width: 70%;
-        margin-top: 60px;
+        margin-top: 40px;
         font-family: "roboto", sans-serif;
         font-size: 15px;
         color: rgb(153, 153, 153);
-        @media screen and (max-width: 900px) {
-          margin-top: 50px;
+        line-height: 1.5;
+      }
+      .content-container-midle {
+        margin-top: 50px;
+        font-size: 0;
+
+        .img-container {
+          margin-top: 10px;
+          display: inline-block;
+          width: 50%;
+          text-align: left;
+
+          @media screen and (max-width: 690px) {
+            width: 100%;
+            text-align: center;
+          }
+          .img-wall {
+            display: inline-block;
+            background-image: url("Pictures/whatwedo/Layer 43.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            width: 95%;
+            height: 385px;
+            @media screen and (max-width: 690px) {
+              background-position: -80px 0px;
+              background-position: center;
+            }
+            @media screen and (max-width: 380px) {
+              background-position: -100px 0px;
+            }
+          }
+        }
+        .accordion-container {
+          position: relative;
+          width: 50%;
+          display: inline-block;
+          height: 380px;
+          vertical-align: top;
+          margin-bottom: 100px;
+          @media screen and (max-width: 690px) {
+            width: 95%;
+            text-align: center;
+          }
+          .accordion {
+            display: inline-block;
+            width: 100%;
+
+            // background-color: red;
+            .accordion-button {
+              background-color: white;
+
+              padding: 18px;
+              width: 100%;
+              text-align: left;
+              border: none;
+              border: 1px solid rgb(210, 210, 210);
+              outline: none;
+              font-size: 0;
+
+              margin-top: 10px;
+              .img-container2 {
+                display: inline-block;
+                width: 10%;
+                .img {
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  width: 30px;
+                  height: 30px;
+                  display: inline-block;
+                }
+
+                .picture {
+                  background-image: url("Pictures/whatwedo/PICTURE.png");
+                }
+                .equalizer {
+                  background-image: url("Pictures/whatwedo/equalizer.png");
+                }
+                .bullseye {
+                  background-image: url("Pictures/whatwedo/bullseye.png");
+                }
+              }
+              h3 {
+                margin-top: 5px;
+                display: inline-block;
+                width: 70%;
+                font-size: 20px;
+                vertical-align: top;
+                font-family: "Montserrat", sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+                color: rgb(51, 51, 51);
+                @media screen and (max-width: 380px) {
+                  margin-left: 10px;
+                }
+              }
+              .img-container3 {
+                display: inline-block;
+                width: 10%;
+                text-align: end;
+                .imgup {
+                  background-image: url("Pictures/whatwedo/ARROW up.png");
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  width: 24px;
+                  height: 12px;
+                  display: inline-block;
+                  margin-bottom: 10px;
+                }
+                .imgdown {
+                  background-image: url("Pictures/whatwedo/ARROW down.png");
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  width: 24px;
+                  height: 12px;
+                  display: inline-block;
+                  margin-bottom: 10px;
+                }
+              }
+            }
+            .second {
+              border-top: 1px solid rgb(210, 210, 210);
+            }
+            .third {
+              border-bottom: none;
+            }
+
+            .panel {
+              background-color: white;
+              display: none;
+              overflow: hidden;
+              text-align: left;
+              width: calc(100% - 2px);
+              margin: none;
+              padding-top: 10px;
+              border: 1px solid rgb(210, 210, 210);
+              border-top: none;
+
+              p {
+                width: 90%;
+                font-family: "roboto", sans-serif;
+                font-size: 15px;
+                height: 130px;
+                overflow: auto;
+                margin-top: 0;
+                margin-bottom: 20px;
+                margin-left: 20px;
+                padding-right: 17px;
+                font-style: italic;
+                font-weight: light;
+                @media screen and (max-width: 420px) {
+                  padding-right: 5px;
+                }
+              }
+
+              .scroller::-webkit-scrollbar {
+                width: 5px;
+                height: 20px;
+              }
+              .scroller::-webkit-scrollbar-track {
+                background: rgb(245, 245, 245);
+                border-radius: 10px;
+              }
+              .scroller::-webkit-scrollbar-thumb {
+                background: rgb(149, 225, 211);
+                border-radius: 10px;
+              }
+            }
+            .active {
+              display: block;
+              vertical-align: top;
+              height: 132;
+            }
+          }
+        }
+      }
+    }
+  }
+  .grey-background {
+    background-color: rgb(248, 248, 248);
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    .content-container5 {
+      position: relative;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      height: 300px;
+      font-size: 0;
+      .content-vertical {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 150px;
+        .img-container {
+          width: 15%;
+          display: inline-block;
+          height: 150px;
+
+          .img {
+            background-image: url("Pictures/whatwedo/speech 4.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 150px;
+            height: 150px;
+          }
+        }
+        .quote-container {
+          width: 85%;
+          display: inline-block;
+          height: 100%;
+          font-size: 20px;
+          text-align: left;
+          p {
+            margin-left: 10px;
+            font-family: "roboto", sans-serif;
+            font-size: 24px;
+            color: rgb(153, 153, 153);
+          }
+          hr {
+            margin-left: 10px;
+            height: 3px;
+            width: 70px;
+            color: red;
+            background-color: red;
+            border: none;
+            display: inline-block;
+          }
+          h1 {
+            margin-top: 40px;
+
+            display: inline-block;
+
+            font-family: "Kaushan Script", cursive;
+            font-size: 24px;
+            color: rgb(51, 51, 51);
+          }
         }
       }
     }
