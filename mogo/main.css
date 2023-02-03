@@ -133,10 +133,7 @@ table {
   border-spacing: 0;
 }
 
-body {
-  text-align: center;
-}
-body .background {
+.background {
   background-image: url("pictures/Layer 15.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -149,17 +146,17 @@ body .background {
   margin-right: auto;
 }
 @media screen and (max-width: 1200px) {
-  body .background {
+  .background {
     width: 100vw;
   }
 }
-body .background .content-container {
+.background .content-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   height: 900px;
 }
-body .background .content-container .header-container {
+.background .content-container .header-container {
   clear: both;
   display: block;
   color: black;
@@ -168,7 +165,7 @@ body .background .content-container .header-container {
   text-align: left;
   font-size: 0;
 }
-body .background .content-container .header-container .logo {
+.background .content-container .header-container .logo {
   margin-left: 20px;
   display: inline-block;
   margin-top: 28px;
@@ -179,15 +176,17 @@ body .background .content-container .header-container .logo {
   width: 100px;
   text-align: left;
 }
-body .background .content-container .header-container nav {
+.background .content-container .header-container .navigation-on {
+  display: inline-block;
+}
+.background .content-container .header-container nav {
   margin-top: 40px;
   display: inline-block;
-  margin-left: 40px;
   width: calc(100% - 160px);
   text-align: right;
 }
 @media screen and (max-width: 800px) {
-  body .background .content-container .header-container nav {
+  .background .content-container .header-container nav {
     margin-top: 20px;
     display: block;
     margin-left: 0px;
@@ -195,7 +194,7 @@ body .background .content-container .header-container nav {
   }
 }
 @media screen and (max-width: 800px) {
-  body .background .content-container .header-container nav {
+  .background .content-container .header-container nav {
     margin-top: 20px;
     display: block;
     margin-left: 0px;
@@ -203,12 +202,12 @@ body .background .content-container .header-container nav {
   }
 }
 @media screen and (max-width: 600px) {
-  body .background .content-container .header-container nav {
+  .background .content-container .header-container nav {
     margin-top: 100px;
     text-align: center;
   }
 }
-body .background .content-container .header-container nav a {
+.background .content-container .header-container nav a {
   font-size: 15px;
   margin: 20px;
   text-decoration: none;
@@ -217,7 +216,7 @@ body .background .content-container .header-container nav a {
   font-size: 0.9rem;
 }
 @media screen and (max-width: 600px) {
-  body .background .content-container .header-container nav a {
+  .background .content-container .header-container nav a {
     margin-top: 50px;
     margin: 0 auto;
     display: block;
@@ -225,20 +224,23 @@ body .background .content-container .header-container nav a {
     margin-bottom: 50px;
     font-size: 30px;
   }
-  body .background .content-container .header-container nav a img {
+  .background .content-container .header-container nav a img {
     width: 50px;
     height: 50px;
   }
 }
-body .background .content-container .header-container nav a:hover {
+.background .content-container .header-container nav a:hover {
   color: rgb(252, 227, 138);
   border-bottom: 3px solid rgb(252, 227, 138);
   padding-bottom: 10px;
 }
 @media screen and (max-width: 600px) {
-  body .background .content-container .navigation-on {
-    margin-right: 20px;
-    float: right;
+  .background .content-container .navigation-on {
+    width: calc(100% - 150px);
+    text-align: right;
+  }
+  .background .content-container .navigation-on .navigation-img {
+    display: inline-block;
     margin-top: 20px;
     display: inline-block;
     background-image: url("pictures/x.png");
@@ -248,15 +250,15 @@ body .background .content-container .header-container nav a:hover {
     width: 30px;
     height: 30px;
   }
-  body .background .content-container .hide-when-navigation-on {
+  .background .content-container .hide-when-navigation-on {
     display: none;
   }
 }
-body .background .content-container .center-content {
+.background .content-container .center-content {
   width: 100%;
   text-align: center;
 }
-body .background .content-container .center-content .header-heading-main {
+.background .content-container .center-content .header-heading-main {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -267,27 +269,27 @@ body .background .content-container .center-content .header-heading-main {
   display: inline-block;
 }
 @media screen and (max-width: 720px) {
-  body .background .content-container .center-content .header-heading-main {
+  .background .content-container .center-content .header-heading-main {
     font-size: 3rem;
     margin-top: 130px;
   }
 }
 @media screen and (max-width: 600px) {
-  body .background .content-container .center-content .header-heading-main {
+  .background .content-container .center-content .header-heading-main {
     margin-top: 80px;
   }
 }
 @media screen and (max-width: 480px) {
-  body .background .content-container .center-content .header-heading-main {
+  .background .content-container .center-content .header-heading-main {
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 360px) {
-  body .background .content-container .center-content .header-heading-main {
+  .background .content-container .center-content .header-heading-main {
     font-size: 1.5rem;
   }
 }
-body .background .content-container .center-content .header-heading-subheading {
+.background .content-container .center-content .header-heading-subheading {
   width: 70%;
   margin-top: 42px;
   margin-left: auto;
@@ -299,26 +301,26 @@ body .background .content-container .center-content .header-heading-subheading {
   line-height: 85%;
 }
 @media screen and (max-width: 1200px) {
-  body .background .content-container .center-content .header-heading-subheading {
+  .background .content-container .center-content .header-heading-subheading {
     font-size: 6rem;
   }
 }
 @media screen and (max-width: 720px) {
-  body .background .content-container .center-content .header-heading-subheading {
+  .background .content-container .center-content .header-heading-subheading {
     font-size: 4rem;
   }
 }
 @media screen and (max-width: 480px) {
-  body .background .content-container .center-content .header-heading-subheading {
+  .background .content-container .center-content .header-heading-subheading {
     font-size: 3rem;
   }
 }
 @media screen and (max-width: 360px) {
-  body .background .content-container .center-content .header-heading-subheading {
+  .background .content-container .center-content .header-heading-subheading {
     font-size: 2rem;
   }
 }
-body .background .content-container .center-content hr {
+.background .content-container .center-content hr {
   margin-top: 40px;
   height: 4px;
   width: 70px;
@@ -327,11 +329,11 @@ body .background .content-container .center-content hr {
   border: none;
 }
 @media screen and (max-width: 480px) {
-  body .background .content-container .center-content hr {
+  .background .content-container .center-content hr {
     margin-top: 30px;
   }
 }
-body .background .content-container .center-content button {
+.background .content-container .center-content button {
   margin-top: 40px;
   padding: 10px 30px 10px 30px;
   text-decoration: none;
@@ -341,35 +343,35 @@ body .background .content-container .center-content button {
   box-shadow: none;
 }
 @media screen and (max-width: 610px) {
-  body .background .content-container .center-content button {
+  .background .content-container .center-content button {
     margin-bottom: 30px;
   }
 }
-body .background .content-container .below-content {
+.background .content-container .below-content {
   font-size: 0;
   margin-left: 20px;
 }
 @media screen and (max-width: 720px) {
-  body .background .content-container .below-content {
+  .background .content-container .below-content {
     margin-top: 100px;
     text-align: center;
   }
 }
-body .background .content-container .below-content .animation-content {
+.background .content-container .below-content .animation-content {
   margin-top: 60px;
   display: inline-block;
   width: 25%;
   text-align: left;
 }
 @media screen and (max-width: 610px) {
-  body .background .content-container .below-content .animation-content {
+  .background .content-container .below-content .animation-content {
     display: block;
     text-align: center;
     margin-top: 20px;
     width: 100%;
   }
 }
-body .background .content-container .below-content .animation-content .progress {
+.background .content-container .below-content .animation-content .progress {
   position: relative;
   height: 4px;
   width: calc(100% - 20px);
@@ -410,12 +412,12 @@ body .background .content-container .below-content .animation-content .progress 
     width: 100%;
   }
 }
-body .background .content-container .below-content .animation-content .animation-text {
+.background .content-container .below-content .animation-content .animation-text {
   margin-top: 25px;
   text-align: left;
   display: inline-block;
 }
-body .background .content-container .below-content .animation-content .animation-text h3 {
+.background .content-container .below-content .animation-content .animation-text h3 {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
@@ -423,14 +425,14 @@ body .background .content-container .below-content .animation-content .animation
   color: white;
   margin-right: 5px;
 }
-body .background .content-container .below-content .animation-content .animation-text p {
+.background .content-container .below-content .animation-content .animation-text p {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
   color: white;
   font-weight: 100;
 }
-body .background .content-container .below-content .animation-content:hover .color {
+.background .content-container .below-content .animation-content:hover .color {
   position: absolute;
   background-color: red;
   width: 3px;
@@ -438,26 +440,27 @@ body .background .content-container .below-content .animation-content:hover .col
   -webkit-animation: progres 4s infinite linear;
           animation: progres 4s infinite linear;
 }
-body .white-background .content-container {
+
+.white-background .content-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-body .white-background .content-container .intro-h1 {
+.white-background .content-container .intro-h1 {
   margin-top: 70px;
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
   color: rgb(51, 51, 51);
 }
-body .white-background .content-container .intro-h2 {
+.white-background .content-container .intro-h2 {
   margin-top: 20px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: rgb(51, 51, 51);
 }
-body .white-background .content-container hr {
+.white-background .content-container hr {
   margin-top: 40px;
   height: 3px;
   width: 70px;
@@ -465,7 +468,7 @@ body .white-background .content-container hr {
   background-color: red;
   border: none;
 }
-body .white-background .content-container p {
+.white-background .content-container p {
   display: inline-block;
   width: 70%;
   margin-top: 40px;
@@ -474,31 +477,31 @@ body .white-background .content-container p {
   color: rgb(153, 153, 153);
   line-height: 1.5;
 }
-body .white-background .content-container .intro-pictures {
+.white-background .content-container .intro-pictures {
   position: relative;
   margin-top: 90px;
   text-align: center;
   font-size: 0;
 }
 @media screen and (max-width: 620px) {
-  body .white-background .content-container .intro-pictures {
+  .white-background .content-container .intro-pictures {
     margin-top: 50px;
   }
 }
-body .white-background .content-container .intro-pictures .img-first-layer {
+.white-background .content-container .intro-pictures .img-first-layer {
   display: inline-block;
   width: 33.33%;
   position: relative;
   text-align: center;
 }
 @media screen and (max-width: 650px) {
-  body .white-background .content-container .intro-pictures .img-first-layer {
+  .white-background .content-container .intro-pictures .img-first-layer {
     display: inline-block;
     width: 100%;
     margin-bottom: 20px;
   }
 }
-body .white-background .content-container .intro-pictures .img-below-background-color {
+.white-background .content-container .intro-pictures .img-below-background-color {
   background-color: rgb(149, 225, 211);
   display: inline-block;
   text-align: center;
@@ -506,55 +509,55 @@ body .white-background .content-container .intro-pictures .img-below-background-
   height: 260px;
 }
 @media screen and (max-width: 1190px) {
-  body .white-background .content-container .intro-pictures .img-below-background-color {
+  .white-background .content-container .intro-pictures .img-below-background-color {
     width: 300px;
   }
 }
 @media screen and (max-width: 920px) {
-  body .white-background .content-container .intro-pictures .img-below-background-color {
+  .white-background .content-container .intro-pictures .img-below-background-color {
     width: 250px;
     height: 170px;
   }
 }
 @media screen and (max-width: 790px) {
-  body .white-background .content-container .intro-pictures .img-below-background-color {
+  .white-background .content-container .intro-pictures .img-below-background-color {
     width: 200px;
     height: 150px;
   }
 }
-body .white-background .content-container .intro-pictures .img-background-image-left {
+.white-background .content-container .intro-pictures .img-background-image-left {
   background-image: url("Pictures/Layer 44.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
 }
-body .white-background .content-container .intro-pictures .img-background-image-midle {
+.white-background .content-container .intro-pictures .img-background-image-midle {
   background-image: url("Pictures/Layer 39.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
 }
-body .white-background .content-container .intro-pictures .img-background-image-right {
+.white-background .content-container .intro-pictures .img-background-image-right {
   background-image: url("Pictures/Layer 41.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
 }
-body .white-background .content-container .intro-pictures .img-background-image-white-effect {
+.white-background .content-container .intro-pictures .img-background-image-white-effect {
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
 }
-body .white-background .content-container .intro-pictures .img-owerlay {
+.white-background .content-container .intro-pictures .img-owerlay {
   position: relative;
   width: 100%;
   height: 100%;
   opacity: 0;
   background-image: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 179, 0, 0.8));
 }
-body .white-background .content-container .intro-pictures .img-icon {
+.white-background .content-container .intro-pictures .img-icon {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -568,54 +571,55 @@ body .white-background .content-container .intro-pictures .img-icon {
   text-align: center;
 }
 @media screen and (max-width: 500px) {
-  body .white-background .content-container .intro-pictures .img-icon {
+  .white-background .content-container .intro-pictures .img-icon {
     background-image: none;
   }
 }
-body .white-background .content-container .intro-pictures .img-background-image-left:hover {
+.white-background .content-container .intro-pictures .img-background-image-left:hover {
   transform: translate(-10px, -10px);
 }
-body .white-background .content-container .intro-pictures .img-background-image-left:hover .img-background-image-white-effect {
+.white-background .content-container .intro-pictures .img-background-image-left:hover .img-background-image-white-effect {
   opacity: 1;
 }
-body .white-background .content-container .intro-pictures .img-background-image-left:hover .img-owerlay {
+.white-background .content-container .intro-pictures .img-background-image-left:hover .img-owerlay {
   opacity: 1;
 }
-body .white-background .content-container .intro-pictures .img-background-image-left:hover .img-icon {
+.white-background .content-container .intro-pictures .img-background-image-left:hover .img-icon {
   opacity: 1;
 }
-body .white-background .content-container .intro-pictures .img-background-image-midle:hover {
+.white-background .content-container .intro-pictures .img-background-image-midle:hover {
   transform: translate(-10px, -10px);
 }
-body .white-background .content-container .intro-pictures .img-background-image-midle:hover .img-background-image-white-effect {
+.white-background .content-container .intro-pictures .img-background-image-midle:hover .img-background-image-white-effect {
   opacity: 1;
 }
-body .white-background .content-container .intro-pictures .img-background-image-midle:hover .img-owerlay {
+.white-background .content-container .intro-pictures .img-background-image-midle:hover .img-owerlay {
   opacity: 1;
 }
-body .white-background .content-container .intro-pictures .img-background-image-midle:hover .img-icon {
+.white-background .content-container .intro-pictures .img-background-image-midle:hover .img-icon {
   opacity: 1;
 }
-body .white-background .content-container .intro-pictures .img-background-image-right:hover {
+.white-background .content-container .intro-pictures .img-background-image-right:hover {
   transform: translate(-10px, -10px);
 }
-body .white-background .content-container .intro-pictures .img-background-image-right:hover .img-background-image-white-effect {
+.white-background .content-container .intro-pictures .img-background-image-right:hover .img-background-image-white-effect {
   opacity: 1;
 }
-body .white-background .content-container .intro-pictures .img-background-image-right:hover .img-owerlay {
+.white-background .content-container .intro-pictures .img-background-image-right:hover .img-owerlay {
   opacity: 1;
 }
-body .white-background .content-container .intro-pictures .img-background-image-right:hover .img-icon {
+.white-background .content-container .intro-pictures .img-background-image-right:hover .img-icon {
   opacity: 1;
 }
-body .blue-background {
+
+.blue-background {
   margin-top: 110px;
   background-color: rgb(149, 225, 211);
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
 }
-body .blue-background .content-container {
+.blue-background .content-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -624,23 +628,23 @@ body .blue-background .content-container {
   font-size: 0;
 }
 @media screen and (max-width: 900px) {
-  body .blue-background .content-container {
+  .blue-background .content-container {
     height: 200px;
   }
 }
 @media screen and (max-width: 700px) {
-  body .blue-background .content-container {
+  .blue-background .content-container {
     height: 100px;
   }
 }
-body .blue-background .content-container .content-box {
+.blue-background .content-container .content-box {
   position: relative;
   display: inline-block;
   width: calc(20% - 1px);
   height: 100%;
   border-right: solid 1px white;
 }
-body .blue-background .content-container .content-box div {
+.blue-background .content-container .content-box div {
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -648,82 +652,83 @@ body .blue-background .content-container .content-box div {
   transform: translate(-50%, -50%);
   width: 100%;
 }
-body .blue-background .content-container .content-box div h1 {
+.blue-background .content-container .content-box div h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 4.5rem;
   color: white;
 }
 @media screen and (max-width: 1000px) {
-  body .blue-background .content-container .content-box div h1 {
+  .blue-background .content-container .content-box div h1 {
     font-size: 3rem;
   }
 }
 @media screen and (max-width: 400px) {
-  body .blue-background .content-container .content-box div h1 {
+  .blue-background .content-container .content-box div h1 {
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 696px) {
-  body .blue-background .content-container .content-box div .blue-background-h1-1 {
+  .blue-background .content-container .content-box div .blue-background-h1-1 {
     margin-top: 10px;
   }
 }
 @media screen and (max-width: 492px) {
-  body .blue-background .content-container .content-box div .blue-background-h1-3 {
+  .blue-background .content-container .content-box div .blue-background-h1-3 {
     margin-top: 10px;
   }
 }
 @media screen and (max-width: 469px) {
-  body .blue-background .content-container .content-box div .blue-background-h1-4 {
+  .blue-background .content-container .content-box div .blue-background-h1-4 {
     margin-top: 10px;
   }
 }
 @media screen and (max-width: 425px) {
-  body .blue-background .content-container .content-box div .blue-background-h1-2 {
+  .blue-background .content-container .content-box div .blue-background-h1-2 {
     margin-top: 10px;
   }
 }
 @media screen and (max-width: 384px) {
-  body .blue-background .content-container .content-box div .blue-background-h1-1 {
+  .blue-background .content-container .content-box div .blue-background-h1-1 {
     margin-top: 22px;
   }
 }
-body .blue-background .content-container .content-box div p {
+.blue-background .content-container .content-box div p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   color: white;
   width: 100%;
 }
 @media screen and (max-width: 900px) {
-  body .blue-background .content-container .content-box div p {
+  .blue-background .content-container .content-box div p {
     font-size: 0.7rem;
   }
 }
-body .blue-background .content-container .content-box:nth-child(5) {
+.blue-background .content-container .content-box:nth-child(5) {
   border-right: none;
 }
-body .white-background2 .content-container {
+
+.white-background2 .content-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   height: 100%;
 }
-body .white-background2 .content-container .intro-h1 {
+.white-background2 .content-container .intro-h1 {
   margin-top: 100px;
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
   color: rgb(51, 51, 51);
 }
-body .white-background2 .content-container .intro-h2 {
+.white-background2 .content-container .intro-h2 {
   margin-top: 20px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: rgb(51, 51, 51);
 }
-body .white-background2 .content-container hr {
+.white-background2 .content-container hr {
   margin-top: 40px;
   height: 3px;
   width: 70px;
@@ -731,61 +736,61 @@ body .white-background2 .content-container hr {
   background-color: red;
   border: none;
 }
-body .white-background2 .content-container .sevices {
+.white-background2 .content-container .sevices {
   margin-top: 40px;
   font-size: 0;
   width: 100%;
   display: block;
   margin-bottom: 100px;
 }
-body .white-background2 .content-container .sevices .service {
+.white-background2 .content-container .sevices .service {
   padding-bottom: 20px;
   display: inline-block;
   width: 33.3%;
   height: 120px;
 }
 @media screen and (max-width: 500px) {
-  body .white-background2 .content-container .sevices .service {
+  .white-background2 .content-container .sevices .service {
     width: 50%;
   }
 }
-body .white-background2 .content-container .sevices .service .icon {
+.white-background2 .content-container .sevices .service .icon {
   margin-top: 20px;
   vertical-align: top;
   display: inline-block;
   width: 10%;
 }
-body .white-background2 .content-container .sevices .service .icon .icon-img {
+.white-background2 .content-container .sevices .service .icon .icon-img {
   background-repeat: no-repeat;
   background-size: center;
   width: 40px;
   height: 40px;
 }
-body .white-background2 .content-container .sevices .service .icon .alarm {
+.white-background2 .content-container .sevices .service .icon .alarm {
   background-image: url("Pictures/services/alarm.png");
 }
-body .white-background2 .content-container .sevices .service .icon .line-graph {
+.white-background2 .content-container .sevices .service .icon .line-graph {
   background-image: url("Pictures/services/line graph.png");
 }
-body .white-background2 .content-container .sevices .service .icon .computer-ok {
+.white-background2 .content-container .sevices .service .icon .computer-ok {
   background-image: url("Pictures/services/computer ok.png");
 }
-body .white-background2 .content-container .sevices .service .icon .book {
+.white-background2 .content-container .sevices .service .icon .book {
   background-image: url("Pictures/services/book 2.png");
 }
-body .white-background2 .content-container .sevices .service .icon .home {
+.white-background2 .content-container .sevices .service .icon .home {
   background-image: url("Pictures/services/home.png");
 }
-body .white-background2 .content-container .sevices .service .icon .imagea {
+.white-background2 .content-container .sevices .service .icon .imagea {
   background-image: url("Pictures/services/imagea.png");
 }
-body .white-background2 .content-container .sevices .service .text {
+.white-background2 .content-container .sevices .service .text {
   display: inline-block;
   width: 80%;
   color: black;
   text-align: left;
 }
-body .white-background2 .content-container .sevices .service .text h3 {
+.white-background2 .content-container .sevices .service .text h3 {
   margin-top: 23px;
   margin-left: 20px;
   font-family: "Montserrat", sans-serif;
@@ -793,7 +798,7 @@ body .white-background2 .content-container .sevices .service .text h3 {
   font-weight: bold;
   color: rgb(51, 51, 51);
 }
-body .white-background2 .content-container .sevices .service .text p {
+.white-background2 .content-container .sevices .service .text p {
   color: rgb(153, 153, 153);
   margin-top: 20px;
   margin-left: 20px;
@@ -802,17 +807,18 @@ body .white-background2 .content-container .sevices .service .text p {
   line-height: 1.5;
 }
 @media screen and (min-width: 875px) {
-  body .white-background2 .content-container .sevices .service:nth-child(1) {
+  .white-background2 .content-container .sevices .service:nth-child(1) {
     border-bottom: solid 1px rgb(153, 153, 153);
   }
-  body .white-background2 .content-container .sevices .service:nth-child(2) {
+  .white-background2 .content-container .sevices .service:nth-child(2) {
     border-bottom: solid 1px rgb(153, 153, 153);
   }
-  body .white-background2 .content-container .sevices .service:nth-child(3) {
+  .white-background2 .content-container .sevices .service:nth-child(3) {
     border-bottom: solid 1px rgb(153, 153, 153);
   }
 }
-body .mauntain-background {
+
+.mauntain-background {
   background-image: url("Pictures/uniqe/Layer 45.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -825,37 +831,37 @@ body .mauntain-background {
   margin-right: auto;
 }
 @media screen and (max-width: 650px) {
-  body .mauntain-background {
+  .mauntain-background {
     height: 670px;
   }
 }
 @media screen and (max-width: 420px) {
-  body .mauntain-background {
+  .mauntain-background {
     height: 492px;
   }
 }
-body .mauntain-background .content-container3 {
+.mauntain-background .content-container3 {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   height: 900px;
   position: relative;
 }
-body .mauntain-background .content-container3 .intro-h1 {
+.mauntain-background .content-container3 .intro-h1 {
   display: inline-block;
   margin-top: 100px;
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
   color: rgb(51, 51, 51);
 }
-body .mauntain-background .content-container3 .intro-h2 {
+.mauntain-background .content-container3 .intro-h2 {
   margin-top: 20px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: rgb(51, 51, 51);
 }
-body .mauntain-background .content-container3 hr {
+.mauntain-background .content-container3 hr {
   margin-top: 40px;
   height: 3px;
   width: 70px;
@@ -863,7 +869,7 @@ body .mauntain-background .content-container3 hr {
   background-color: red;
   border: none;
 }
-body .mauntain-background .content-container3 .phone-img {
+.mauntain-background .content-container3 .phone-img {
   display: inline-block;
   background-image: url("Pictures/uniqe/White.png");
   background-size: cover;
@@ -877,39 +883,40 @@ body .mauntain-background .content-container3 .phone-img {
   transform: translate(-50%);
 }
 @media screen and (max-width: 650px) {
-  body .mauntain-background .content-container3 .phone-img {
+  .mauntain-background .content-container3 .phone-img {
     width: 400px;
     height: 400px;
   }
 }
 @media screen and (max-width: 420px) {
-  body .mauntain-background .content-container3 .phone-img {
+  .mauntain-background .content-container3 .phone-img {
     width: 200px;
     height: 200px;
   }
 }
-body .white-background3 .content-container4 {
+
+.white-background3 .content-container4 {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   height: 100%;
 }
-body .white-background3 .content-container4 .intro-h1 {
+.white-background3 .content-container4 .intro-h1 {
   display: inline-block;
   margin-top: 100px;
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
   color: rgb(51, 51, 51);
 }
-body .white-background3 .content-container4 .intro-h2 {
+.white-background3 .content-container4 .intro-h2 {
   margin-top: 20px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: rgb(51, 51, 51);
 }
-body .white-background3 .content-container4 hr {
+.white-background3 .content-container4 hr {
   margin-top: 40px;
   height: 3px;
   width: 70px;
@@ -917,7 +924,7 @@ body .white-background3 .content-container4 hr {
   background-color: red;
   border: none;
 }
-body .white-background3 .content-container4 p {
+.white-background3 .content-container4 p {
   display: inline-block;
   width: 70%;
   margin-top: 40px;
@@ -926,23 +933,23 @@ body .white-background3 .content-container4 p {
   color: rgb(153, 153, 153);
   line-height: 1.5;
 }
-body .white-background3 .content-container4 .content-container-midle {
+.white-background3 .content-container4 .content-container-midle {
   margin-top: 50px;
   font-size: 0;
 }
-body .white-background3 .content-container4 .content-container-midle .img-container {
+.white-background3 .content-container4 .content-container-midle .img-container {
   margin-top: 10px;
   display: inline-block;
   width: 50%;
   text-align: left;
 }
 @media screen and (max-width: 690px) {
-  body .white-background3 .content-container4 .content-container-midle .img-container {
+  .white-background3 .content-container4 .content-container-midle .img-container {
     width: 100%;
     text-align: center;
   }
 }
-body .white-background3 .content-container4 .content-container-midle .img-container .img-wall {
+.white-background3 .content-container4 .content-container-midle .img-container .img-wall {
   display: inline-block;
   background-image: url("Pictures/whatwedo/Layer 43.jpg");
   background-size: cover;
@@ -952,17 +959,17 @@ body .white-background3 .content-container4 .content-container-midle .img-contai
   height: 385px;
 }
 @media screen and (max-width: 690px) {
-  body .white-background3 .content-container4 .content-container-midle .img-container .img-wall {
+  .white-background3 .content-container4 .content-container-midle .img-container .img-wall {
     background-position: -80px 0px;
     background-position: center;
   }
 }
 @media screen and (max-width: 380px) {
-  body .white-background3 .content-container4 .content-container-midle .img-container .img-wall {
+  .white-background3 .content-container4 .content-container-midle .img-container .img-wall {
     background-position: -100px 0px;
   }
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container {
+.white-background3 .content-container4 .content-container-midle .accordion-container {
   position: relative;
   width: 50%;
   display: inline-block;
@@ -971,16 +978,16 @@ body .white-background3 .content-container4 .content-container-midle .accordion-
   margin-bottom: 100px;
 }
 @media screen and (max-width: 690px) {
-  body .white-background3 .content-container4 .content-container-midle .accordion-container {
+  .white-background3 .content-container4 .content-container-midle .accordion-container {
     width: 95%;
     text-align: center;
   }
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion {
   display: inline-block;
   width: 100%;
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button {
   background-color: white;
   padding: 18px;
   width: 100%;
@@ -991,11 +998,11 @@ body .white-background3 .content-container4 .content-container-midle .accordion-
   font-size: 0;
   margin-top: 10px;
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container2 {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container2 {
   display: inline-block;
   width: 10%;
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container2 .img {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container2 .img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1003,16 +1010,16 @@ body .white-background3 .content-container4 .content-container-midle .accordion-
   height: 30px;
   display: inline-block;
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container2 .picture {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container2 .picture {
   background-image: url("Pictures/whatwedo/PICTURE.png");
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container2 .equalizer {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container2 .equalizer {
   background-image: url("Pictures/whatwedo/equalizer.png");
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container2 .bullseye {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container2 .bullseye {
   background-image: url("Pictures/whatwedo/bullseye.png");
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button h3 {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button h3 {
   margin-top: 5px;
   display: inline-block;
   width: 70%;
@@ -1024,16 +1031,16 @@ body .white-background3 .content-container4 .content-container-midle .accordion-
   color: rgb(51, 51, 51);
 }
 @media screen and (max-width: 380px) {
-  body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button h3 {
+  .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button h3 {
     margin-left: 10px;
   }
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container3 {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container3 {
   display: inline-block;
   width: 10%;
   text-align: end;
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container3 .imgup {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container3 .imgup {
   background-image: url("Pictures/whatwedo/ARROW up.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1043,7 +1050,7 @@ body .white-background3 .content-container4 .content-container-midle .accordion-
   display: inline-block;
   margin-bottom: 10px;
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container3 .imgdown {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .accordion-button .img-container3 .imgdown {
   background-image: url("Pictures/whatwedo/ARROW down.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1053,13 +1060,13 @@ body .white-background3 .content-container4 .content-container-midle .accordion-
   display: inline-block;
   margin-bottom: 10px;
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .second {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .second {
   border-top: 1px solid rgb(210, 210, 210);
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .third {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .third {
   border-bottom: none;
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .panel {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .panel {
   background-color: white;
   display: none;
   overflow: hidden;
@@ -1070,7 +1077,7 @@ body .white-background3 .content-container4 .content-container-midle .accordion-
   border: 1px solid rgb(210, 210, 210);
   border-top: none;
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .panel p {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .panel p {
   width: 90%;
   font-family: "roboto", sans-serif;
   font-size: 15px;
@@ -1084,34 +1091,35 @@ body .white-background3 .content-container4 .content-container-midle .accordion-
   font-weight: light;
 }
 @media screen and (max-width: 420px) {
-  body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .panel p {
+  .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .panel p {
     padding-right: 5px;
   }
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .panel .scroller::-webkit-scrollbar {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .panel .scroller::-webkit-scrollbar {
   width: 5px;
   height: 20px;
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .panel .scroller::-webkit-scrollbar-track {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .panel .scroller::-webkit-scrollbar-track {
   background: rgb(245, 245, 245);
   border-radius: 10px;
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .panel .scroller::-webkit-scrollbar-thumb {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .panel .scroller::-webkit-scrollbar-thumb {
   background: rgb(149, 225, 211);
   border-radius: 10px;
 }
-body .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .active {
+.white-background3 .content-container4 .content-container-midle .accordion-container .accordion .active {
   display: block;
   height: 132;
 }
-body .grey-background {
+
+.grey-background {
   background-color: rgb(248, 248, 248);
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   vertical-align: middle;
 }
-body .grey-background .content-container5 {
+.grey-background .content-container5 {
   position: relative;
   max-width: 1200px;
   margin-left: auto;
@@ -1121,11 +1129,11 @@ body .grey-background .content-container5 {
   font-size: 0;
 }
 @media screen and (max-width: 380px) {
-  body .grey-background .content-container5 {
+  .grey-background .content-container5 {
     height: 500px;
   }
 }
-body .grey-background .content-container5 .content-vertical {
+.grey-background .content-container5 .content-vertical {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1134,16 +1142,16 @@ body .grey-background .content-container5 .content-vertical {
   height: 150px;
 }
 @media screen and (max-width: 432px) {
-  body .grey-background .content-container5 .content-vertical {
+  .grey-background .content-container5 .content-vertical {
     margin-top: -20px;
   }
 }
 @media screen and (max-width: 380px) {
-  body .grey-background .content-container5 .content-vertical {
+  .grey-background .content-container5 .content-vertical {
     margin-top: -80px;
   }
 }
-body .grey-background .content-container5 .content-vertical .arrow {
+.grey-background .content-container5 .content-vertical .arrow {
   display: inline-block;
   width: 5%;
   background-size: cover;
@@ -1154,49 +1162,49 @@ body .grey-background .content-container5 .content-vertical .arrow {
   margin-bottom: 70px;
 }
 @media screen and (max-width: 432px) {
-  body .grey-background .content-container5 .content-vertical .arrow {
+  .grey-background .content-container5 .content-vertical .arrow {
     margin-bottom: 100px;
   }
 }
 @media screen and (max-width: 380px) {
-  body .grey-background .content-container5 .content-vertical .arrow {
+  .grey-background .content-container5 .content-vertical .arrow {
     margin-bottom: 150px;
   }
 }
-body .grey-background .content-container5 .content-vertical .left {
+.grey-background .content-container5 .content-vertical .left {
   background-image: url("Pictures/whatwedo/arrow-left.png");
   margin-right: 70px;
 }
 @media screen and (max-width: 1050px) {
-  body .grey-background .content-container5 .content-vertical .left {
+  .grey-background .content-container5 .content-vertical .left {
     margin-right: 20px;
   }
 }
-body .grey-background .content-container5 .content-vertical .right {
+.grey-background .content-container5 .content-vertical .right {
   background-image: url("Pictures/whatwedo/arrow-right.png");
   margin-left: 70px;
 }
 @media screen and (max-width: 1050px) {
-  body .grey-background .content-container5 .content-vertical .right {
+  .grey-background .content-container5 .content-vertical .right {
     margin-left: 20px;
   }
 }
-body .grey-background .content-container5 .content-vertical .img-container {
+.grey-background .content-container5 .content-vertical .img-container {
   width: 15%;
   display: inline-block;
   height: 150px;
 }
 @media screen and (max-width: 432px) {
-  body .grey-background .content-container5 .content-vertical .img-container {
+  .grey-background .content-container5 .content-vertical .img-container {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 380px) {
-  body .grey-background .content-container5 .content-vertical .img-container {
+  .grey-background .content-container5 .content-vertical .img-container {
     display: none;
   }
 }
-body .grey-background .content-container5 .content-vertical .img-container .img {
+.grey-background .content-container5 .content-vertical .img-container .img {
   background-image: url("Pictures/whatwedo/speech 4.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1205,28 +1213,28 @@ body .grey-background .content-container5 .content-vertical .img-container .img 
   height: 150px;
 }
 @media screen and (max-width: 860px) {
-  body .grey-background .content-container5 .content-vertical .img-container .img {
+  .grey-background .content-container5 .content-vertical .img-container .img {
     margin-top: 45px;
     width: 100px;
     height: 100px;
   }
 }
 @media screen and (max-width: 694px) {
-  body .grey-background .content-container5 .content-vertical .img-container .img {
+  .grey-background .content-container5 .content-vertical .img-container .img {
     margin-top: 25px;
   }
 }
 @media screen and (max-width: 549px) {
-  body .grey-background .content-container5 .content-vertical .img-container .img {
+  .grey-background .content-container5 .content-vertical .img-container .img {
     margin-top: 15px;
   }
 }
 @media screen and (max-width: 478px) {
-  body .grey-background .content-container5 .content-vertical .img-container .img {
+  .grey-background .content-container5 .content-vertical .img-container .img {
     margin-top: 5px;
   }
 }
-body .grey-background .content-container5 .content-vertical .quote-container {
+.grey-background .content-container5 .content-vertical .quote-container {
   width: calc(85% - 170px);
   display: inline-block;
   height: 150px;
@@ -1234,12 +1242,12 @@ body .grey-background .content-container5 .content-vertical .quote-container {
   text-align: left;
 }
 @media screen and (max-width: 1050px) {
-  body .grey-background .content-container5 .content-vertical .quote-container {
+  .grey-background .content-container5 .content-vertical .quote-container {
     width: calc(85% - 170px + 100px);
   }
 }
 @media screen and (max-width: 380px) {
-  body .grey-background .content-container5 .content-vertical .quote-container .media-img {
+  .grey-background .content-container5 .content-vertical .quote-container .media-img {
     display: inline-block;
     background-image: url("Pictures/whatwedo/speech 4.png");
     background-size: cover;
@@ -1252,11 +1260,11 @@ body .grey-background .content-container5 .content-vertical .quote-container {
   }
 }
 @media screen and (max-width: 340px) {
-  body .grey-background .content-container5 .content-vertical .quote-container .media-img {
+  .grey-background .content-container5 .content-vertical .quote-container .media-img {
     margin-left: 70px;
   }
 }
-body .grey-background .content-container5 .content-vertical .quote-container p {
+.grey-background .content-container5 .content-vertical .quote-container p {
   margin-left: 0;
   font-family: "roboto", sans-serif;
   font-size: 24px;
@@ -1264,27 +1272,27 @@ body .grey-background .content-container5 .content-vertical .quote-container p {
   line-height: 1.5;
 }
 @media screen and (max-width: 1200px) {
-  body .grey-background .content-container5 .content-vertical .quote-container p {
+  .grey-background .content-container5 .content-vertical .quote-container p {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1050px) {
-  body .grey-background .content-container5 .content-vertical .quote-container p {
+  .grey-background .content-container5 .content-vertical .quote-container p {
     margin-left: 30px;
   }
 }
 @media screen and (max-width: 860px) {
-  body .grey-background .content-container5 .content-vertical .quote-container p {
+  .grey-background .content-container5 .content-vertical .quote-container p {
     margin-left: 50px;
     font-size: 15px;
   }
 }
 @media screen and (max-width: 380px) {
-  body .grey-background .content-container5 .content-vertical .quote-container p {
+  .grey-background .content-container5 .content-vertical .quote-container p {
     margin-left: 25px;
   }
 }
-body .grey-background .content-container5 .content-vertical .quote-container hr {
+.grey-background .content-container5 .content-vertical .quote-container hr {
   margin-left: 10px;
   height: 3px;
   width: 70px;
@@ -1294,21 +1302,21 @@ body .grey-background .content-container5 .content-vertical .quote-container hr 
   display: inline-block;
 }
 @media screen and (max-width: 1050px) {
-  body .grey-background .content-container5 .content-vertical .quote-container hr {
+  .grey-background .content-container5 .content-vertical .quote-container hr {
     margin-left: 30px;
   }
 }
 @media screen and (max-width: 860px) {
-  body .grey-background .content-container5 .content-vertical .quote-container hr {
+  .grey-background .content-container5 .content-vertical .quote-container hr {
     margin-left: 50px;
   }
 }
 @media screen and (max-width: 380px) {
-  body .grey-background .content-container5 .content-vertical .quote-container hr {
+  .grey-background .content-container5 .content-vertical .quote-container hr {
     margin-left: 25px;
   }
 }
-body .grey-background .content-container5 .content-vertical .quote-container h1 {
+.grey-background .content-container5 .content-vertical .quote-container h1 {
   margin-top: 20px;
   margin-bottom: 20px;
   display: inline-block;
@@ -1316,26 +1324,27 @@ body .grey-background .content-container5 .content-vertical .quote-container h1 
   font-size: 24px;
   color: rgb(51, 51, 51);
 }
-body .white-background4 .content-container {
+
+.white-background4 .content-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-body .white-background4 .content-container .intro-h1 {
+.white-background4 .content-container .intro-h1 {
   margin-top: 70px;
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
   color: rgb(51, 51, 51);
 }
-body .white-background4 .content-container .intro-h2 {
+.white-background4 .content-container .intro-h2 {
   margin-top: 20px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: rgb(51, 51, 51);
 }
-body .white-background4 .content-container hr {
+.white-background4 .content-container hr {
   margin-top: 40px;
   height: 3px;
   width: 70px;
@@ -1343,7 +1352,7 @@ body .white-background4 .content-container hr {
   background-color: red;
   border: none;
 }
-body .white-background4 .content-container p {
+.white-background4 .content-container p {
   display: inline-block;
   width: 70%;
   margin-top: 40px;
@@ -1352,31 +1361,31 @@ body .white-background4 .content-container p {
   color: rgb(153, 153, 153);
   line-height: 1.5;
 }
-body .white-background4 .content-container .intro-pictures {
+.white-background4 .content-container .intro-pictures {
   position: relative;
   margin-top: 90px;
   text-align: center;
   font-size: 0;
 }
 @media screen and (max-width: 620px) {
-  body .white-background4 .content-container .intro-pictures {
+  .white-background4 .content-container .intro-pictures {
     margin-top: 50px;
   }
 }
-body .white-background4 .content-container .intro-pictures .img-first-layer {
+.white-background4 .content-container .intro-pictures .img-first-layer {
   display: inline-block;
   width: 33.33%;
   position: relative;
   text-align: center;
 }
 @media screen and (max-width: 790px) {
-  body .white-background4 .content-container .intro-pictures .img-first-layer {
+  .white-background4 .content-container .intro-pictures .img-first-layer {
     display: inline-block;
     width: 100%;
     margin-bottom: 20px;
   }
 }
-body .white-background4 .content-container .intro-pictures .img-below-background-color {
+.white-background4 .content-container .intro-pictures .img-below-background-color {
   background-color: rgb(149, 225, 211);
   display: inline-block;
   text-align: center;
@@ -1384,64 +1393,64 @@ body .white-background4 .content-container .intro-pictures .img-below-background
   height: 470px;
 }
 @media screen and (max-width: 1190px) {
-  body .white-background4 .content-container .intro-pictures .img-below-background-color {
+  .white-background4 .content-container .intro-pictures .img-below-background-color {
     width: 300px;
   }
 }
 @media screen and (max-width: 1000px) {
-  body .white-background4 .content-container .intro-pictures .img-below-background-color {
+  .white-background4 .content-container .intro-pictures .img-below-background-color {
     width: 250px;
   }
 }
 @media screen and (max-width: 790px) {
-  body .white-background4 .content-container .intro-pictures .img-below-background-color {
+  .white-background4 .content-container .intro-pictures .img-below-background-color {
     width: 300px;
   }
 }
-body .white-background4 .content-container .intro-pictures .img-background-image {
+.white-background4 .content-container .intro-pictures .img-background-image {
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 @media screen and (max-width: 1190px) {
-  body .white-background4 .content-container .intro-pictures .img-background-image {
+  .white-background4 .content-container .intro-pictures .img-background-image {
     background-position: -40px 0px;
   }
 }
-body .white-background4 .content-container .intro-pictures .left {
+.white-background4 .content-container .intro-pictures .left {
   background-image: url("Pictures/meetourteem/Layer 16.png");
 }
-body .white-background4 .content-container .intro-pictures .midle {
+.white-background4 .content-container .intro-pictures .midle {
   background-image: url("Pictures/meetourteem/Layer 18.jpg");
 }
 @media screen and (max-width: 1000px) {
-  body .white-background4 .content-container .intro-pictures .midle {
+  .white-background4 .content-container .intro-pictures .midle {
     background-position: -70px 0px;
   }
 }
-body .white-background4 .content-container .intro-pictures .right {
+.white-background4 .content-container .intro-pictures .right {
   background-image: url("Pictures/meetourteem/Layer 19.jpg");
 }
 @media screen and (max-width: 1000px) {
-  body .white-background4 .content-container .intro-pictures .right {
+  .white-background4 .content-container .intro-pictures .right {
     background-position: -60px 0px;
   }
 }
-body .white-background4 .content-container .intro-pictures .img-background-image-white-effect {
+.white-background4 .content-container .intro-pictures .img-background-image-white-effect {
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
 }
-body .white-background4 .content-container .intro-pictures .img-owerlay {
+.white-background4 .content-container .intro-pictures .img-owerlay {
   position: relative;
   width: 100%;
   height: 100%;
   opacity: 0;
   background-image: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 179, 0, 0.8));
 }
-body .white-background4 .content-container .intro-pictures .img-icon {
+.white-background4 .content-container .intro-pictures .img-icon {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1455,59 +1464,59 @@ body .white-background4 .content-container .intro-pictures .img-icon {
   text-align: center;
 }
 @media screen and (max-width: 500px) {
-  body .white-background4 .content-container .intro-pictures .img-icon {
+  .white-background4 .content-container .intro-pictures .img-icon {
     background-image: none;
   }
 }
 @media screen and (max-width: 800px) {
-  body .white-background4 .content-container .intro-pictures .img-icon {
+  .white-background4 .content-container .intro-pictures .img-icon {
     background-image: url("Pictures/meetourteem/twitter-rotate.png");
   }
 }
-body .white-background4 .content-container .intro-pictures .img-background-image-left:hover {
+.white-background4 .content-container .intro-pictures .img-background-image-left:hover {
   transform: translate(-10px, -10px);
 }
-body .white-background4 .content-container .intro-pictures .img-background-image-left:hover .img-background-image-white-effect {
+.white-background4 .content-container .intro-pictures .img-background-image-left:hover .img-background-image-white-effect {
   opacity: 1;
 }
-body .white-background4 .content-container .intro-pictures .img-background-image-left:hover .img-owerlay {
+.white-background4 .content-container .intro-pictures .img-background-image-left:hover .img-owerlay {
   opacity: 1;
 }
-body .white-background4 .content-container .intro-pictures .img-background-image-left:hover .img-icon {
+.white-background4 .content-container .intro-pictures .img-background-image-left:hover .img-icon {
   opacity: 1;
 }
-body .white-background4 .content-container .intro-pictures .img-background-image-midle:hover {
+.white-background4 .content-container .intro-pictures .img-background-image-midle:hover {
   transform: translate(-10px, -10px);
 }
-body .white-background4 .content-container .intro-pictures .img-background-image-midle:hover .img-background-image-white-effect {
+.white-background4 .content-container .intro-pictures .img-background-image-midle:hover .img-background-image-white-effect {
   opacity: 1;
 }
-body .white-background4 .content-container .intro-pictures .img-background-image-midle:hover .img-owerlay {
+.white-background4 .content-container .intro-pictures .img-background-image-midle:hover .img-owerlay {
   opacity: 1;
 }
-body .white-background4 .content-container .intro-pictures .img-background-image-midle:hover .img-icon {
+.white-background4 .content-container .intro-pictures .img-background-image-midle:hover .img-icon {
   opacity: 1;
 }
-body .white-background4 .content-container .intro-pictures .img-background-image-right:hover {
+.white-background4 .content-container .intro-pictures .img-background-image-right:hover {
   transform: translate(-10px, -10px);
 }
-body .white-background4 .content-container .intro-pictures .img-background-image-right:hover .img-background-image-white-effect {
+.white-background4 .content-container .intro-pictures .img-background-image-right:hover .img-background-image-white-effect {
   opacity: 1;
 }
-body .white-background4 .content-container .intro-pictures .img-background-image-right:hover .img-owerlay {
+.white-background4 .content-container .intro-pictures .img-background-image-right:hover .img-owerlay {
   opacity: 1;
 }
-body .white-background4 .content-container .intro-pictures .img-background-image-right:hover .img-icon {
+.white-background4 .content-container .intro-pictures .img-background-image-right:hover .img-icon {
   opacity: 1;
 }
-body .white-background4 .content-container .intro-pictures h3 {
+.white-background4 .content-container .intro-pictures h3 {
   margin-top: 30px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: bolder;
   color: rgb(51, 51, 51);
 }
-body .white-background4 .content-container .intro-pictures p {
+.white-background4 .content-container .intro-pictures p {
   margin-top: 15px;
   font-family: "roboto";
   font-style: italic;
@@ -1515,7 +1524,8 @@ body .white-background4 .content-container .intro-pictures p {
   color: rgb(153, 153, 153);
   margin-top: 20px;
 }
-body .grey-background {
+
+.grey-background {
   margin-top: 100px;
   background-color: rgb(248, 248, 248);
   max-width: 1920px;
@@ -1523,7 +1533,7 @@ body .grey-background {
   margin-right: auto;
   vertical-align: middle;
 }
-body .grey-background .content-container6 {
+.grey-background .content-container6 {
   position: relative;
   max-width: 1200px;
   margin-left: auto;
@@ -1533,23 +1543,23 @@ body .grey-background .content-container6 {
   font-size: 0;
 }
 @media screen and (max-width: 900px) {
-  body .grey-background .content-container6 {
+  .grey-background .content-container6 {
     height: 300px;
   }
 }
-body .grey-background .content-container6 .icon-container {
+.grey-background .content-container6 .icon-container {
   display: inline-block;
   width: 16.6667%;
   position: relative;
   height: 250px;
 }
 @media screen and (max-width: 900px) {
-  body .grey-background .content-container6 .icon-container {
+  .grey-background .content-container6 .icon-container {
     width: 33.33%;
     height: 150px;
   }
 }
-body .grey-background .content-container6 .icon-container .icon-img {
+.grey-background .content-container6 .icon-container .icon-img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1562,50 +1572,51 @@ body .grey-background .content-container6 .icon-container .icon-img {
   margin: 0 auto;
 }
 @media screen and (max-width: 430px) {
-  body .grey-background .content-container6 .icon-container .icon-img {
+  .grey-background .content-container6 .icon-container .icon-img {
     background-size: cover;
     width: 80px;
     height: 80px;
   }
 }
-body .grey-background .content-container6 .icon-container .first {
+.grey-background .content-container6 .icon-container .first {
   background-image: url("Pictures/icons/Layer 25 (1).png");
 }
-body .grey-background .content-container6 .icon-container .second {
+.grey-background .content-container6 .icon-container .second {
   background-image: url("Pictures/icons/Layer 25 (2).png");
 }
-body .grey-background .content-container6 .icon-container .third {
+.grey-background .content-container6 .icon-container .third {
   background-image: url("Pictures/icons/Layer 25 (3).png");
 }
-body .grey-background .content-container6 .icon-container .fourth {
+.grey-background .content-container6 .icon-container .fourth {
   background-image: url("Pictures/icons/Layer 25 (4).png");
 }
-body .grey-background .content-container6 .icon-container .fifth {
+.grey-background .content-container6 .icon-container .fifth {
   background-image: url("Pictures/icons/Layer 25 (5).png");
 }
-body .grey-background .content-container6 .icon-container .sixth {
+.grey-background .content-container6 .icon-container .sixth {
   background-image: url("Pictures/icons/Layer 25 (6).png");
 }
-body .white-background5 .content-container6 {
+
+.white-background5 .content-container6 {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-body .white-background5 .content-container6 .intro-h1 {
+.white-background5 .content-container6 .intro-h1 {
   margin-top: 70px;
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
   color: rgb(51, 51, 51);
 }
-body .white-background5 .content-container6 .intro-h2 {
+.white-background5 .content-container6 .intro-h2 {
   margin-top: 20px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: rgb(51, 51, 51);
 }
-body .white-background5 .content-container6 hr {
+.white-background5 .content-container6 hr {
   margin-top: 40px;
   height: 3px;
   width: 70px;
@@ -1613,7 +1624,7 @@ body .white-background5 .content-container6 hr {
   background-color: red;
   border: none;
 }
-body .white-background5 .content-container6 p {
+.white-background5 .content-container6 p {
   display: inline-block;
   width: 70%;
   margin-top: 40px;
@@ -1622,33 +1633,49 @@ body .white-background5 .content-container6 p {
   color: rgb(153, 153, 153);
   line-height: 1.5;
 }
-body .multi-pictures-background {
+
+.multi-pictures-background {
   margin-top: 100px;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   font-size: 0;
-  height: 900px;
+  height: 800px;
 }
-body .multi-pictures-background .img-owerlay {
+@media screen and (max-width: 1190px) {
+  .multi-pictures-background {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .multi-pictures-background {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .multi-pictures-background {
+    height: 800px;
+  }
+}
+.multi-pictures-background .img-owerlay {
   position: relative;
   width: 100%;
   height: 100%;
   opacity: 0;
   background-image: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 179, 0, 0.8));
 }
-body .multi-pictures-background .img-background-image-white-effect {
+.multi-pictures-background .img-background-image-white-effect {
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
 }
-body .multi-pictures-background .img-icon {
+.multi-pictures-background .img-icon {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("Pictures/meetourteem/twitter.png");
+  background-image: url("Pictures/someofwork/Layer 34.png");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0;
@@ -1657,48 +1684,757 @@ body .multi-pictures-background .img-icon {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-body .multi-pictures-background .img:hover .img-background-image-white-effect {
-  opacity: 1;
-}
-body .multi-pictures-background .img:hover .img-owerlay {
-  opacity: 1;
-}
-body .multi-pictures-background .img:hover .img-icon {
-  opacity: 1;
-}
-body .multi-pictures-background .half1 {
+.multi-pictures-background .half1 {
   display: inline-block;
   width: 50%;
 }
-body .multi-pictures-background .half2 {
+@media screen and (max-width: 500px) {
+  .multi-pictures-background .half1 {
+    width: 100%;
+  }
+}
+.multi-pictures-background .half2 {
   display: inline-block;
   width: 50%;
 }
-body .multi-pictures-background .half3 {
+@media screen and (max-width: 500px) {
+  .multi-pictures-background .half2 {
+    width: 100%;
+  }
+}
+.multi-pictures-background .half3 {
   display: inline-block;
   width: 50%;
 }
-body .multi-pictures-background .half4 {
+.multi-pictures-background .half4 {
   display: inline-block;
   width: 50%;
 }
-body .multi-pictures-background .img {
+.multi-pictures-background .img {
   display: inline-block;
   width: 50%;
   height: 400px;
-  background-color: red;
-  background-image: url("Pictures/meetourteem/twitter.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-body .multi-pictures-background .ocean {
+@media screen and (max-width: 1190px) {
+  .multi-pictures-background .img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .multi-pictures-background .img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .multi-pictures-background .img {
+    height: 200px;
+  }
+}
+.multi-pictures-background .ocean {
   height: 800px;
   width: 100%;
 }
-body .multi-pictures-background .roof2 {
+@media screen and (max-width: 1190px) {
+  .multi-pictures-background .ocean {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .multi-pictures-background .ocean {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .multi-pictures-background .ocean {
+    height: 400px;
+  }
+}
+.multi-pictures-background .roof2 {
   width: 100%;
 }
-body .multi-pictures-background .building {
+.multi-pictures-background .building {
   width: 100%;
+}
+.multi-pictures-background .man {
+  background-image: url("Pictures/someofwork/Layer 26.jpg");
+}
+.multi-pictures-background .roof {
+  background-image: url("Pictures/someofwork/Layer 33.jpg");
+}
+.multi-pictures-background .bridge {
+  background-image: url("Pictures/someofwork/Layer 35.jpg");
+}
+.multi-pictures-background .sky {
+  background-image: url("Pictures/someofwork/Layer 29.jpg");
+}
+.multi-pictures-background .ocean {
+  background-image: url("Pictures/someofwork/Layer 34.jpg");
+}
+.multi-pictures-background .roof2 {
+  background-image: url("Pictures/someofwork/Layer 31.jpg");
+}
+.multi-pictures-background .building {
+  background-image: url("Pictures/someofwork/Layer 32.png");
+}
+.multi-pictures-background .man:hover .img-background-image-white-effect {
+  opacity: 1;
+}
+.multi-pictures-background .man:hover .img-owerlay {
+  opacity: 1;
+}
+.multi-pictures-background .man:hover .img-icon {
+  opacity: 1;
+}
+.multi-pictures-background .roof:hover .img-background-image-white-effect {
+  opacity: 1;
+}
+.multi-pictures-background .roof:hover .img-owerlay {
+  opacity: 1;
+}
+.multi-pictures-background .roof:hover .img-icon {
+  opacity: 1;
+}
+.multi-pictures-background .bridge:hover .img-background-image-white-effect {
+  opacity: 1;
+}
+.multi-pictures-background .bridge:hover .img-owerlay {
+  opacity: 1;
+}
+.multi-pictures-background .bridge:hover .img-icon {
+  opacity: 1;
+}
+.multi-pictures-background .sky:hover .img-background-image-white-effect {
+  opacity: 1;
+}
+.multi-pictures-background .sky:hover .img-owerlay {
+  opacity: 1;
+}
+.multi-pictures-background .sky:hover .img-icon {
+  opacity: 1;
+}
+.multi-pictures-background .ocean:hover .img-background-image-white-effect {
+  opacity: 1;
+}
+.multi-pictures-background .ocean:hover .img-owerlay {
+  opacity: 1;
+}
+.multi-pictures-background .ocean:hover .img-icon {
+  opacity: 1;
+}
+.multi-pictures-background .roof2:hover .img-background-image-white-effect {
+  opacity: 1;
+}
+.multi-pictures-background .roof2:hover .img-owerlay {
+  opacity: 1;
+}
+.multi-pictures-background .roof2:hover .img-icon {
+  opacity: 1;
+}
+.multi-pictures-background .building:hover .img-background-image-white-effect {
+  opacity: 1;
+}
+.multi-pictures-background .building:hover .img-owerlay {
+  opacity: 1;
+}
+.multi-pictures-background .building:hover .img-icon {
+  opacity: 1;
+}
+
+.grey-background3 {
+  background-color: white;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+.grey-background3 .content-container5 {
+  position: relative;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 400px;
+  font-size: 0;
+}
+@media screen and (max-width: 380px) {
+  .grey-background3 .content-container5 {
+    height: 500px;
+  }
+}
+.grey-background3 .content-container5 .content-vertical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 150px;
+}
+@media screen and (max-width: 432px) {
+  .grey-background3 .content-container5 .content-vertical {
+    margin-top: -20px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .grey-background3 .content-container5 .content-vertical {
+    margin-top: -80px;
+  }
+}
+.grey-background3 .content-container5 .content-vertical .arrow {
+  display: inline-block;
+  width: 5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 24px;
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 432px) {
+  .grey-background3 .content-container5 .content-vertical .arrow {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .grey-background3 .content-container5 .content-vertical .arrow {
+    margin-bottom: 150px;
+  }
+}
+.grey-background3 .content-container5 .content-vertical .left {
+  background-image: url("Pictures/whatwedo/arrow-left.png");
+  margin-right: 70px;
+}
+@media screen and (max-width: 1050px) {
+  .grey-background3 .content-container5 .content-vertical .left {
+    margin-right: 20px;
+  }
+}
+.grey-background3 .content-container5 .content-vertical .right {
+  background-image: url("Pictures/whatwedo/arrow-right.png");
+  margin-left: 70px;
+}
+@media screen and (max-width: 1050px) {
+  .grey-background3 .content-container5 .content-vertical .right {
+    margin-left: 20px;
+  }
+}
+.grey-background3 .content-container5 .content-vertical .img-container {
+  width: 15%;
+  display: inline-block;
+  height: 150px;
+}
+@media screen and (max-width: 432px) {
+  .grey-background3 .content-container5 .content-vertical .img-container {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .grey-background3 .content-container5 .content-vertical .img-container {
+    display: none;
+  }
+}
+.grey-background3 .content-container5 .content-vertical .img-container .img {
+  background-image: url("Pictures/someofwork/Layer 36.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+}
+@media screen and (max-width: 860px) {
+  .grey-background3 .content-container5 .content-vertical .img-container .img {
+    margin-top: 45px;
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 694px) {
+  .grey-background3 .content-container5 .content-vertical .img-container .img {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 549px) {
+  .grey-background3 .content-container5 .content-vertical .img-container .img {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 478px) {
+  .grey-background3 .content-container5 .content-vertical .img-container .img {
+    margin-top: 5px;
+  }
+}
+.grey-background3 .content-container5 .content-vertical .quote-container {
+  width: calc(85% - 170px);
+  display: inline-block;
+  height: 150px;
+  font-size: 20px;
+  text-align: left;
+}
+@media screen and (max-width: 1050px) {
+  .grey-background3 .content-container5 .content-vertical .quote-container {
+    width: calc(85% - 170px + 100px);
+  }
+}
+@media screen and (max-width: 380px) {
+  .grey-background3 .content-container5 .content-vertical .quote-container .media-img {
+    display: inline-block;
+    background-image: url("Pictures/someofwork/Layer 36.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .grey-background3 .content-container5 .content-vertical .quote-container .media-img {
+    margin-left: 70px;
+  }
+}
+.grey-background3 .content-container5 .content-vertical .quote-container p {
+  margin-left: 0;
+  font-family: "roboto", sans-serif;
+  font-size: 24px;
+  color: rgb(153, 153, 153);
+  line-height: 1.5;
+}
+@media screen and (max-width: 1200px) {
+  .grey-background3 .content-container5 .content-vertical .quote-container p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .grey-background3 .content-container5 .content-vertical .quote-container p {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .grey-background3 .content-container5 .content-vertical .quote-container p {
+    margin-left: 50px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .grey-background3 .content-container5 .content-vertical .quote-container p {
+    margin-left: 25px;
+  }
+}
+.grey-background3 .content-container5 .content-vertical .quote-container hr {
+  margin-left: 10px;
+  height: 3px;
+  width: 70px;
+  color: red;
+  background-color: red;
+  border: none;
+  display: inline-block;
+}
+@media screen and (max-width: 1050px) {
+  .grey-background3 .content-container5 .content-vertical .quote-container hr {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .grey-background3 .content-container5 .content-vertical .quote-container hr {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .grey-background3 .content-container5 .content-vertical .quote-container hr {
+    margin-left: 25px;
+  }
+}
+.grey-background3 .content-container5 .content-vertical .quote-container h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: rgb(51, 51, 51);
+}
+
+.mauntain-background2 {
+  background-image: url("Pictures/whatpeoplesay/Layer 53.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1920px;
+  height: 850px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 650px) {
+  .mauntain-background2 {
+    height: 1250px;
+  }
+}
+.mauntain-background2 .content-container6 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 100%;
+}
+.mauntain-background2 .content-container6 .intro-h1 {
+  display: inline-block;
+  margin-top: 100px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: rgb(51, 51, 51);
+}
+.mauntain-background2 .content-container6 .intro-h2 {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+.mauntain-background2 .content-container6 hr {
+  margin-top: 40px;
+  height: 3px;
+  width: 70px;
+  color: red;
+  background-color: red;
+  border: none;
+}
+.mauntain-background2 .content-container6 p {
+  display: inline-block;
+  width: 70%;
+  margin-top: 40px;
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
+  color: rgb(153, 153, 153);
+  line-height: 1.5;
+}
+.mauntain-background2 .content-container6 .clients {
+  margin-top: 40px;
+  font-size: 0;
+  width: 100%;
+  display: block;
+  margin-bottom: 100px;
+}
+.mauntain-background2 .content-container6 .clients .client {
+  padding-bottom: 20px;
+  display: inline-block;
+  width: 50%;
+  height: 120px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 650px) {
+  .mauntain-background2 .content-container6 .clients .client {
+    width: 100%;
+  }
+}
+.mauntain-background2 .content-container6 .clients .client .icon {
+  margin-top: 20px;
+  display: inline-block;
+  width: 20%;
+}
+.mauntain-background2 .content-container6 .clients .client .icon .icon-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 650px) {
+  .mauntain-background2 .content-container6 .clients .client .icon .icon-img {
+    margin-bottom: 0px;
+  }
+}
+.mauntain-background2 .content-container6 .clients .client .icon .first {
+  background-image: url("Pictures/whatpeoplesay/Layer 47.png");
+}
+.mauntain-background2 .content-container6 .clients .client .icon .second {
+  background-image: url("Pictures/whatpeoplesay/Layer 49.png");
+}
+.mauntain-background2 .content-container6 .clients .client .icon .third {
+  background-image: url("Pictures/whatpeoplesay/Layer 50.png");
+}
+.mauntain-background2 .content-container6 .clients .client .icon .fourth {
+  background-image: url("Pictures/whatpeoplesay/Layer 51.png");
+}
+.mauntain-background2 .content-container6 .clients .client .text {
+  display: inline-block;
+  width: 80%;
+  color: black;
+  text-align: left;
+}
+.mauntain-background2 .content-container6 .clients .client .text h3 {
+  margin-top: 23px;
+  margin-left: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+@media screen and (max-width: 900px) {
+  .mauntain-background2 .content-container6 .clients .client .text h3 {
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .mauntain-background2 .content-container6 .clients .client .text h3 {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mauntain-background2 .content-container6 .clients .client .text h3 {
+    margin-left: 60px;
+  }
+}
+.mauntain-background2 .content-container6 .clients .client .text hr {
+  text-align: left;
+  margin-top: 10px;
+  height: 3px;
+  width: 70px;
+  color: red;
+  background-color: red;
+  border: none;
+  margin-left: 40px;
+}
+@media screen and (max-width: 900px) {
+  .mauntain-background2 .content-container6 .clients .client .text hr {
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .mauntain-background2 .content-container6 .clients .client .text hr {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mauntain-background2 .content-container6 .clients .client .text hr {
+    margin-left: 60px;
+  }
+}
+.mauntain-background2 .content-container6 .clients .client .text p {
+  color: rgb(153, 153, 153);
+  margin-top: 10px;
+  margin-left: 40px;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 900px) {
+  .mauntain-background2 .content-container6 .clients .client .text p {
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .mauntain-background2 .content-container6 .clients .client .text p {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mauntain-background2 .content-container6 .clients .client .text p {
+    margin-left: 60px;
+  }
+}
+
+.white-background3 .content-container6 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 830px;
+}
+@media screen and (max-width: 900px) {
+  .white-background3 .content-container6 {
+    height: 1600px;
+  }
+}
+@media screen and (max-width: 446px) {
+  .white-background3 .content-container6 {
+    height: 1750px;
+  }
+}
+.white-background3 .content-container6 .intro-h1 {
+  display: inline-block;
+  margin-top: 100px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: rgb(51, 51, 51);
+}
+.white-background3 .content-container6 .intro-h2 {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+.white-background3 .content-container6 hr {
+  margin-top: 40px;
+  height: 3px;
+  width: 70px;
+  color: red;
+  background-color: red;
+  border: none;
+}
+.white-background3 .content-container6 .content-container-midle {
+  font-size: 0;
+  margin-top: 40px;
+}
+.white-background3 .content-container6 .content-container-midle .content {
+  text-align: center;
+  display: inline-block;
+  width: calc(33.33% - 30px);
+  height: 100px;
+  font-size: 20px;
+}
+@media screen and (max-width: 900px) {
+  .white-background3 .content-container6 .content-container-midle .content {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .white-background3 .content-container6 .content-container-midle .content:nth-child(2) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+.white-background3 .content-container6 .content-container-midle .content-2 {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: solid 1px rgb(153, 153, 153);
+}
+@media screen and (max-width: 900px) {
+  .white-background3 .content-container6 .content-container-midle .content-2 {
+    width: 60%;
+  }
+}
+.white-background3 .content-container6 .content-container-midle .img {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 240px;
+  background-position: center;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  background-image: url("Pictures/ourstories/Layer 54.jpg");
+}
+.white-background3 .content-container6 .content-container-midle .first {
+  background-image: url("Pictures/ourstories/Layer 54.jpg");
+}
+.white-background3 .content-container6 .content-container-midle .second {
+  background-image: url("Pictures/ourstories/Layer 55.jpg");
+}
+.white-background3 .content-container6 .content-container-midle .third {
+  background-image: url("Pictures/ourstories/Layer 57.jpg");
+}
+.white-background3 .content-container6 .content-container-midle h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+.white-background3 .content-container6 .content-container-midle p {
+  display: inline-block;
+  margin-top: 20px;
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
+  color: rgb(153, 153, 153);
+  line-height: 1.5;
+  vertical-align: bottom;
+  margin-bottom: 3px;
+}
+.white-background3 .content-container6 .content-container-midle .icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("Pictures/ourstories/VIEW.png");
+  width: 20px;
+  height: 20px;
+}
+.white-background3 .content-container6 .content-container-midle .icon2 {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("Pictures/ourstories/bubble.png");
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.white-background3 .content-container6 .content-container-midle .date {
+  position: absolute;
+  width: 60px;
+  height: 70px;
+  background-color: rgb(149, 225, 211);
+  top: 80%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.white-background3 .content-container6 .content-container-midle .date h3 {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.white-background3 .content-container6 .content-container-midle .date p {
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
+  color: white;
+  margin-top: 0px;
+  font-weight: lighter;
+}
+
+.mauntain-background3 {
+  background-image: url("Pictures/map/Layer 59.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1920px;
+  height: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.mauntain-background3 .content-container8 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 100%;
+}
+.mauntain-background3 .content-container8 .icon {
+  margin-top: 55px;
+  display: inline-block;
+  background-image: url("Pictures/map/pin 2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 30px;
+}
+.mauntain-background3 .content-container8 h3 {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(243, 129, 129);
+}
+.mauntain-background3 .content-container8 hr {
+  margin-top: 20px;
+  height: 3px;
+  width: 70px;
+  color: rgb(243, 129, 129);
+  background-color: rgb(243, 129, 129);
+  border: none;
+}
+
+.white-background4 .content-container9 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 830px;
 }/*# sourceMappingURL=main.css.map */
