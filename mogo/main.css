@@ -133,6 +133,40 @@ table {
   border-spacing: 0;
 }
 
+.intro-h1 {
+  margin-top: 70px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.5rem;
+  color: rgb(51, 51, 51);
+}
+
+.intro-h2 {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+
+.intro-hr {
+  margin-top: 40px;
+  height: 3px;
+  width: 70px;
+  color: red;
+  background-color: red;
+  border: none;
+}
+
+.intro-txt {
+  display: inline-block;
+  width: 70%;
+  margin-top: 40px;
+  font-family: "roboto", sans-serif;
+  font-size: 0.938rem;
+  color: rgb(153, 153, 153);
+  line-height: 1.5;
+}
+
 .background {
   background-image: url("pictures/Layer 15.jpg");
   background-size: cover;
@@ -147,14 +181,13 @@ table {
 }
 @media screen and (max-width: 1200px) {
   .background {
-    width: 100vw;
+    height: 100vh;
   }
 }
 .background .content-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  height: 900px;
 }
 .background .content-container .header-container {
   clear: both;
@@ -178,55 +211,34 @@ table {
 }
 .background .content-container .header-container .navigation-on {
   display: inline-block;
+  width: 50px;
 }
 .background .content-container .header-container nav {
   margin-top: 40px;
   display: inline-block;
-  width: calc(100% - 160px);
+  width: calc(100% - 120px);
   text-align: right;
 }
-@media screen and (max-width: 800px) {
-  .background .content-container .header-container nav {
-    margin-top: 20px;
-    display: block;
-    margin-left: 0px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 800px) {
-  .background .content-container .header-container nav {
-    margin-top: 20px;
-    display: block;
-    margin-left: 0px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .background .content-container .header-container nav {
-    margin-top: 100px;
-    text-align: center;
-  }
-}
 .background .content-container .header-container nav a {
-  font-size: 15px;
+  font-size: 0.938rem;
   margin: 20px;
   text-decoration: none;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
 }
-@media screen and (max-width: 600px) {
+.background .content-container .header-container nav .navigation-img {
+  display: inline-block;
+}
+@media screen and (max-width: 730px) {
   .background .content-container .header-container nav a {
-    margin-top: 50px;
-    margin: 0 auto;
-    display: block;
-    width: 40%;
-    margin-bottom: 50px;
-    font-size: 30px;
+    display: none;
   }
-  .background .content-container .header-container nav a img {
-    width: 50px;
-    height: 50px;
+  .background .content-container .header-container nav .media-search {
+    display: inline-block;
+  }
+  .background .content-container .header-container nav .media-chart {
+    display: inline-block;
   }
 }
 .background .content-container .header-container nav a:hover {
@@ -234,24 +246,24 @@ table {
   border-bottom: 3px solid rgb(252, 227, 138);
   padding-bottom: 10px;
 }
-@media screen and (max-width: 600px) {
-  .background .content-container .navigation-on {
-    width: calc(100% - 150px);
-    text-align: right;
-  }
-  .background .content-container .navigation-on .navigation-img {
+@media screen and (max-width: 730px) {
+  .background .content-container .header-container nav {
+    width: calc(100% - 120px);
     display: inline-block;
+    vertical-align: top;
     margin-top: 20px;
+  }
+  .background .content-container .header-container .navigation-img {
     display: inline-block;
-    background-image: url("pictures/x.png");
+    margin-top: 10px;
+    margin-right: 30px;
+    display: inline-block;
+    background-image: url("pictures/hamburger.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 30px;
-    height: 30px;
-  }
-  .background .content-container .hide-when-navigation-on {
-    display: none;
+    width: 20px;
+    height: 20px;
   }
 }
 .background .content-container .center-content {
@@ -274,9 +286,9 @@ table {
     margin-top: 130px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .background .content-container .center-content .header-heading-main {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -355,6 +367,11 @@ table {
   .background .content-container .below-content {
     margin-top: 100px;
     text-align: center;
+  }
+}
+@media screen and (max-width: 620px) {
+  .background .content-container .below-content {
+    margin-top: 50px;
   }
 }
 .background .content-container .below-content .animation-content {
@@ -446,36 +463,6 @@ table {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-.white-background .content-container .intro-h1 {
-  margin-top: 70px;
-  font-family: "Kaushan Script", cursive;
-  font-size: 24px;
-  color: rgb(51, 51, 51);
-}
-.white-background .content-container .intro-h2 {
-  margin-top: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(51, 51, 51);
-}
-.white-background .content-container hr {
-  margin-top: 40px;
-  height: 3px;
-  width: 70px;
-  color: red;
-  background-color: red;
-  border: none;
-}
-.white-background .content-container p {
-  display: inline-block;
-  width: 70%;
-  margin-top: 40px;
-  font-family: "roboto", sans-serif;
-  font-size: 15px;
-  color: rgb(153, 153, 153);
-  line-height: 1.5;
 }
 .white-background .content-container .intro-pictures {
   position: relative;
@@ -715,27 +702,6 @@ table {
   text-align: center;
   height: 100%;
 }
-.white-background2 .content-container .intro-h1 {
-  margin-top: 100px;
-  font-family: "Kaushan Script", cursive;
-  font-size: 24px;
-  color: rgb(51, 51, 51);
-}
-.white-background2 .content-container .intro-h2 {
-  margin-top: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(51, 51, 51);
-}
-.white-background2 .content-container hr {
-  margin-top: 40px;
-  height: 3px;
-  width: 70px;
-  color: red;
-  background-color: red;
-  border: none;
-}
 .white-background2 .content-container .sevices {
   margin-top: 40px;
   font-size: 0;
@@ -794,7 +760,7 @@ table {
   margin-top: 23px;
   margin-left: 20px;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   color: rgb(51, 51, 51);
 }
@@ -803,7 +769,7 @@ table {
   margin-top: 20px;
   margin-left: 20px;
   font-family: "roboto", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 @media screen and (min-width: 875px) {
@@ -846,28 +812,8 @@ table {
   margin-right: auto;
   height: 900px;
   position: relative;
-}
-.mauntain-background .content-container3 .intro-h1 {
+  margin-top: -5px;
   display: inline-block;
-  margin-top: 100px;
-  font-family: "Kaushan Script", cursive;
-  font-size: 24px;
-  color: rgb(51, 51, 51);
-}
-.mauntain-background .content-container3 .intro-h2 {
-  margin-top: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(51, 51, 51);
-}
-.mauntain-background .content-container3 hr {
-  margin-top: 40px;
-  height: 3px;
-  width: 70px;
-  color: red;
-  background-color: red;
-  border: none;
 }
 .mauntain-background .content-container3 .phone-img {
   display: inline-block;
@@ -878,7 +824,7 @@ table {
   width: 600px;
   height: 600px;
   position: absolute;
-  top: 35%;
+  top: 35.9%;
   left: 50%;
   transform: translate(-50%);
 }
@@ -901,37 +847,6 @@ table {
   margin-right: auto;
   text-align: center;
   height: 100%;
-}
-.white-background3 .content-container4 .intro-h1 {
-  display: inline-block;
-  margin-top: 100px;
-  font-family: "Kaushan Script", cursive;
-  font-size: 24px;
-  color: rgb(51, 51, 51);
-}
-.white-background3 .content-container4 .intro-h2 {
-  margin-top: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(51, 51, 51);
-}
-.white-background3 .content-container4 hr {
-  margin-top: 40px;
-  height: 3px;
-  width: 70px;
-  color: red;
-  background-color: red;
-  border: none;
-}
-.white-background3 .content-container4 p {
-  display: inline-block;
-  width: 70%;
-  margin-top: 40px;
-  font-family: "roboto", sans-serif;
-  font-size: 15px;
-  color: rgb(153, 153, 153);
-  line-height: 1.5;
 }
 .white-background3 .content-container4 .content-container-midle {
   margin-top: 50px;
@@ -1023,10 +938,9 @@ table {
   margin-top: 5px;
   display: inline-block;
   width: 70%;
-  font-size: 20px;
   vertical-align: top;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   color: rgb(51, 51, 51);
 }
@@ -1078,9 +992,11 @@ table {
   border-top: none;
 }
 .white-background3 .content-container4 .content-container-midle .accordion-container .accordion .panel p {
+  color: rgb(153, 153, 153);
+  line-height: 1.5;
   width: 90%;
   font-family: "roboto", sans-serif;
-  font-size: 15px;
+  font-size: 0.938rem;
   height: 130px;
   overflow: auto;
   margin-top: 0;
@@ -1134,6 +1050,7 @@ table {
   }
 }
 .grey-background .content-container5 .content-vertical {
+  margin-top: -20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1238,7 +1155,7 @@ table {
   width: calc(85% - 170px);
   display: inline-block;
   height: 150px;
-  font-size: 20px;
+  font-size: 0;
   text-align: left;
 }
 @media screen and (max-width: 1050px) {
@@ -1267,13 +1184,13 @@ table {
 .grey-background .content-container5 .content-vertical .quote-container p {
   margin-left: 0;
   font-family: "roboto", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgb(153, 153, 153);
   line-height: 1.5;
 }
 @media screen and (max-width: 1200px) {
   .grey-background .content-container5 .content-vertical .quote-container p {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -1284,7 +1201,7 @@ table {
 @media screen and (max-width: 860px) {
   .grey-background .content-container5 .content-vertical .quote-container p {
     margin-left: 50px;
-    font-size: 15px;
+    font-size: 0.938rem;
   }
 }
 @media screen and (max-width: 380px) {
@@ -1319,9 +1236,10 @@ table {
 .grey-background .content-container5 .content-vertical .quote-container h1 {
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 10px;
   display: inline-block;
   font-family: "Kaushan Script", cursive;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgb(51, 51, 51);
 }
 
@@ -1330,36 +1248,6 @@ table {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-.white-background4 .content-container .intro-h1 {
-  margin-top: 70px;
-  font-family: "Kaushan Script", cursive;
-  font-size: 24px;
-  color: rgb(51, 51, 51);
-}
-.white-background4 .content-container .intro-h2 {
-  margin-top: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(51, 51, 51);
-}
-.white-background4 .content-container hr {
-  margin-top: 40px;
-  height: 3px;
-  width: 70px;
-  color: red;
-  background-color: red;
-  border: none;
-}
-.white-background4 .content-container p {
-  display: inline-block;
-  width: 70%;
-  margin-top: 40px;
-  font-family: "roboto", sans-serif;
-  font-size: 15px;
-  color: rgb(153, 153, 153);
-  line-height: 1.5;
 }
 .white-background4 .content-container .intro-pictures {
   position: relative;
@@ -1473,46 +1361,46 @@ table {
     background-image: url("Pictures/meetourteem/twitter-rotate.png");
   }
 }
-.white-background4 .content-container .intro-pictures .img-background-image-left:hover {
+.white-background4 .content-container .intro-pictures .left:hover {
   transform: translate(-10px, -10px);
 }
-.white-background4 .content-container .intro-pictures .img-background-image-left:hover .img-background-image-white-effect {
+.white-background4 .content-container .intro-pictures .left:hover .img-background-image-white-effect {
   opacity: 1;
 }
-.white-background4 .content-container .intro-pictures .img-background-image-left:hover .img-owerlay {
+.white-background4 .content-container .intro-pictures .left:hover .img-owerlay {
   opacity: 1;
 }
-.white-background4 .content-container .intro-pictures .img-background-image-left:hover .img-icon {
+.white-background4 .content-container .intro-pictures .left:hover .img-icon {
   opacity: 1;
 }
-.white-background4 .content-container .intro-pictures .img-background-image-midle:hover {
+.white-background4 .content-container .intro-pictures .midle:hover {
   transform: translate(-10px, -10px);
 }
-.white-background4 .content-container .intro-pictures .img-background-image-midle:hover .img-background-image-white-effect {
+.white-background4 .content-container .intro-pictures .midle:hover .img-background-image-white-effect {
   opacity: 1;
 }
-.white-background4 .content-container .intro-pictures .img-background-image-midle:hover .img-owerlay {
+.white-background4 .content-container .intro-pictures .midle:hover .img-owerlay {
   opacity: 1;
 }
-.white-background4 .content-container .intro-pictures .img-background-image-midle:hover .img-icon {
+.white-background4 .content-container .intro-pictures .midle:hover .img-icon {
   opacity: 1;
 }
-.white-background4 .content-container .intro-pictures .img-background-image-right:hover {
+.white-background4 .content-container .intro-pictures .right:hover {
   transform: translate(-10px, -10px);
 }
-.white-background4 .content-container .intro-pictures .img-background-image-right:hover .img-background-image-white-effect {
+.white-background4 .content-container .intro-pictures .right:hover .img-background-image-white-effect {
   opacity: 1;
 }
-.white-background4 .content-container .intro-pictures .img-background-image-right:hover .img-owerlay {
+.white-background4 .content-container .intro-pictures .right:hover .img-owerlay {
   opacity: 1;
 }
-.white-background4 .content-container .intro-pictures .img-background-image-right:hover .img-icon {
+.white-background4 .content-container .intro-pictures .right:hover .img-icon {
   opacity: 1;
 }
 .white-background4 .content-container .intro-pictures h3 {
   margin-top: 30px;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bolder;
   color: rgb(51, 51, 51);
 }
@@ -1520,7 +1408,7 @@ table {
   margin-top: 15px;
   font-family: "roboto";
   font-style: italic;
-  font-size: 15px;
+  font-size: 0.938rem;
   color: rgb(153, 153, 153);
   margin-top: 20px;
 }
@@ -1602,36 +1490,6 @@ table {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-.white-background5 .content-container6 .intro-h1 {
-  margin-top: 70px;
-  font-family: "Kaushan Script", cursive;
-  font-size: 24px;
-  color: rgb(51, 51, 51);
-}
-.white-background5 .content-container6 .intro-h2 {
-  margin-top: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(51, 51, 51);
-}
-.white-background5 .content-container6 hr {
-  margin-top: 40px;
-  height: 3px;
-  width: 70px;
-  color: red;
-  background-color: red;
-  border: none;
-}
-.white-background5 .content-container6 p {
-  display: inline-block;
-  width: 70%;
-  margin-top: 40px;
-  font-family: "roboto", sans-serif;
-  font-size: 15px;
-  color: rgb(153, 153, 153);
-  line-height: 1.5;
 }
 
 .multi-pictures-background {
@@ -1969,7 +1827,7 @@ table {
   width: calc(85% - 170px);
   display: inline-block;
   height: 150px;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: left;
 }
 @media screen and (max-width: 1050px) {
@@ -1998,13 +1856,13 @@ table {
 .grey-background3 .content-container5 .content-vertical .quote-container p {
   margin-left: 0;
   font-family: "roboto", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgb(153, 153, 153);
   line-height: 1.5;
 }
 @media screen and (max-width: 1200px) {
   .grey-background3 .content-container5 .content-vertical .quote-container p {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -2015,7 +1873,7 @@ table {
 @media screen and (max-width: 860px) {
   .grey-background3 .content-container5 .content-vertical .quote-container p {
     margin-left: 50px;
-    font-size: 15px;
+    font-size: 0.938rem;
   }
 }
 @media screen and (max-width: 380px) {
@@ -2050,9 +1908,10 @@ table {
 .grey-background3 .content-container5 .content-vertical .quote-container h1 {
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 10px;
   display: inline-block;
   font-family: "Kaushan Script", cursive;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgb(51, 51, 51);
 }
 
@@ -2077,41 +1936,11 @@ table {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  display: inline-block;
   height: 100%;
 }
-.mauntain-background2 .content-container6 .intro-h1 {
-  display: inline-block;
-  margin-top: 100px;
-  font-family: "Kaushan Script", cursive;
-  font-size: 24px;
-  color: rgb(51, 51, 51);
-}
-.mauntain-background2 .content-container6 .intro-h2 {
-  margin-top: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(51, 51, 51);
-}
-.mauntain-background2 .content-container6 hr {
-  margin-top: 40px;
-  height: 3px;
-  width: 70px;
-  color: red;
-  background-color: red;
-  border: none;
-}
-.mauntain-background2 .content-container6 p {
-  display: inline-block;
-  width: 70%;
-  margin-top: 40px;
-  font-family: "roboto", sans-serif;
-  font-size: 15px;
-  color: rgb(153, 153, 153);
-  line-height: 1.5;
-}
 .mauntain-background2 .content-container6 .clients {
-  margin-top: 40px;
+  margin-top: 100px;
   font-size: 0;
   width: 100%;
   display: block;
@@ -2169,7 +1998,7 @@ table {
   margin-top: 23px;
   margin-left: 40px;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   color: rgb(51, 51, 51);
 }
@@ -2218,7 +2047,7 @@ table {
   margin-top: 10px;
   margin-left: 40px;
   font-family: "roboto", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 @media screen and (max-width: 900px) {
@@ -2242,50 +2071,28 @@ table {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  height: 830px;
+  height: 700px;
 }
 @media screen and (max-width: 900px) {
   .white-background3 .content-container6 {
-    height: 1600px;
+    height: 1700px;
   }
 }
-@media screen and (max-width: 446px) {
+@media screen and (max-width: 450px) {
   .white-background3 .content-container6 {
-    height: 1750px;
+    height: 1800px;
   }
-}
-.white-background3 .content-container6 .intro-h1 {
-  display: inline-block;
-  margin-top: 100px;
-  font-family: "Kaushan Script", cursive;
-  font-size: 24px;
-  color: rgb(51, 51, 51);
-}
-.white-background3 .content-container6 .intro-h2 {
-  margin-top: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(51, 51, 51);
-}
-.white-background3 .content-container6 hr {
-  margin-top: 40px;
-  height: 3px;
-  width: 70px;
-  color: red;
-  background-color: red;
-  border: none;
 }
 .white-background3 .content-container6 .content-container-midle {
   font-size: 0;
   margin-top: 40px;
 }
 .white-background3 .content-container6 .content-container-midle .content {
-  text-align: center;
+  text-align: left;
   display: inline-block;
   width: calc(33.33% - 30px);
   height: 100px;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 @media screen and (max-width: 900px) {
   .white-background3 .content-container6 .content-container-midle .content {
@@ -2302,10 +2109,12 @@ table {
   margin: 0 auto;
   padding-bottom: 20px;
   border-bottom: solid 1px rgb(153, 153, 153);
+  text-align: left;
 }
 @media screen and (max-width: 900px) {
   .white-background3 .content-container6 .content-container-midle .content-2 {
     width: 60%;
+    margin-top: 50px;
   }
 }
 .white-background3 .content-container6 .content-container-midle .img {
@@ -2330,7 +2139,7 @@ table {
 }
 .white-background3 .content-container6 .content-container-midle h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   color: rgb(51, 51, 51);
 }
@@ -2338,11 +2147,16 @@ table {
   display: inline-block;
   margin-top: 20px;
   font-family: "roboto", sans-serif;
-  font-size: 15px;
+  font-size: 0.938rem;
   color: rgb(153, 153, 153);
   line-height: 1.5;
   vertical-align: bottom;
   margin-bottom: 3px;
+}
+@media screen and (max-width: 900px) {
+  .white-background3 .content-container6 .content-container-midle .icons {
+    text-align: center;
+  }
 }
 .white-background3 .content-container6 .content-container-midle .icon {
   display: inline-block;
@@ -2374,13 +2188,13 @@ table {
 .white-background3 .content-container6 .content-container-midle .date h3 {
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: bold;
   color: white;
 }
 .white-background3 .content-container6 .content-container-midle .date p {
   font-family: "roboto", sans-serif;
-  font-size: 15px;
+  font-size: 0.938rem;
   color: white;
   margin-top: 0px;
   font-weight: lighter;
@@ -2418,7 +2232,7 @@ table {
 .mauntain-background3 .content-container8 h3 {
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: rgb(243, 129, 129);
 }
@@ -2436,5 +2250,313 @@ table {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  height: 830px;
+  font-size: 0;
+  margin-top: 80px;
+}
+@media screen and (max-width: 599px) {
+  .white-background4 .content-container9 {
+    text-align: left;
+  }
+}
+.white-background4 .content-container9 .mogo-lorem {
+  width: 95%;
+}
+.white-background4 .content-container9 .folowers-container {
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+}
+@media screen and (max-width: 1100px) {
+  .white-background4 .content-container9 .folowers-container {
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+}
+.white-background4 .content-container9 .folowers-container h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.875rem;
+  font-weight: bold;
+  color: rgb(204, 204, 204);
+}
+.white-background4 .content-container9 .folowers-container p {
+  margin-top: 40px;
+  font-family: "roboto", sans-serif;
+  font-size: 0.938rem;
+  color: rgb(153, 153, 153);
+  line-height: 1.5;
+}
+.white-background4 .content-container9 .folowers-container .number-of-folowers .number {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+.white-background4 .content-container9 .folowers-container .number-of-folowers .text {
+  margin-left: 5px;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+.white-background4 .content-container9 .folowers-container hr {
+  margin-top: 20px;
+  height: 1px;
+  background-color: rgb(153, 153, 153);
+  border: none;
+}
+.white-background4 .content-container9 .folowers-container .follow-us {
+  margin-top: 20px;
+}
+.white-background4 .content-container9 .folowers-container .follow-us .follow {
+  margin-top: 0px;
+  display: inline-block;
+  font-family: "roboto", sans-serif;
+  font-size: 0.938rem;
+  color: rgb(153, 153, 153);
+  font-weight: light;
+  font-style: italic;
+  vertical-align: top;
+  margin-top: 5px;
+}
+.white-background4 .content-container9 .folowers-container .follow-us .icon-img {
+  margin-left: 10px;
+  display: inline-block;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+.white-background4 .content-container9 .folowers-container .follow-us .facebook {
+  background-image: url("Pictures/followus/facebook.png");
+}
+.white-background4 .content-container9 .folowers-container .follow-us .twitter {
+  background-image: url("Pictures/followus/twitter.png");
+}
+.white-background4 .content-container9 .folowers-container .follow-us .instagram {
+  background-image: url("Pictures/followus/instagram.png");
+}
+.white-background4 .content-container9 .folowers-container .follow-us .pinterest {
+  background-image: url("Pictures/followus/pinterest.png");
+}
+.white-background4 .content-container9 .folowers-container .follow-us .google {
+  background-image: url("Pictures/followus/google plus.png");
+}
+.white-background4 .content-container9 .folowers-container .follow-us .youtube {
+  background-image: url("Pictures/followus/youtube.png");
+}
+.white-background4 .content-container9 .folowers-container .follow-us .dribbble {
+  background-image: url("Pictures/followus/dribbble.png");
+}
+.white-background4 .content-container9 .folowers-container .follow-us .tumblr {
+  background-image: url("Pictures/followus/tumblr.png");
+}
+.white-background4 .content-container9 .folowers-container form {
+  margin-top: 40px;
+}
+.white-background4 .content-container9 .folowers-container form input[type=text],
+.white-background4 .content-container9 .folowers-container form select {
+  width: 230px;
+  height: 40px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+  font-size: 0.938rem;
+  color: rgb(204, 204, 204);
+  font-weight: light;
+  font-style: italic;
+  padding-left: 10px;
+}
+.white-background4 .content-container9 .folowers-container form input[type=submit] {
+  width: 150px;
+  height: 40px;
+  background-color: rgb(149, 225, 211);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border: none;
+}
+@media screen and (max-width: 380px) {
+  .white-background4 .content-container9 .folowers-container form input[type=submit] {
+    width: 230px;
+  }
+}
+.white-background4 .content-container9 .blogs-container {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+@media screen and (max-width: 1100px) {
+  .white-background4 .content-container9 .blogs-container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .white-background4 .content-container9 .blogs-container {
+    width: 100%;
+  }
+}
+.white-background4 .content-container9 .blogs-container h3 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  text-align: left;
+  margin-left: 20px;
+}
+.white-background4 .content-container9 .blogs-container .blog-container {
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 0;
+}
+@media screen and (max-width: 1100px) {
+  .white-background4 .content-container9 .blogs-container .blog-container {
+    margin-bottom: 0px;
+  }
+}
+.white-background4 .content-container9 .blogs-container .blog-container .img {
+  display: inline-block;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 80px;
+  margin-left: 20px;
+}
+.white-background4 .content-container9 .blogs-container .blog-container .first {
+  background-image: url("Pictures/blogs/1.jpg");
+}
+.white-background4 .content-container9 .blogs-container .blog-container .second {
+  background-image: url("Pictures/blogs/2.jpg");
+}
+.white-background4 .content-container9 .blogs-container .blog-container .third {
+  background-image: url("Pictures/blogs/3.jpg");
+}
+.white-background4 .content-container9 .blogs-container .blog-container .text-container {
+  vertical-align: top;
+  text-align: left;
+  width: calc(100% - 140px);
+  display: inline-block;
+  line-height: 1.5;
+}
+.white-background4 .content-container9 .blogs-container .blog-container .text-container h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  margin-bottom: 0;
+}
+.white-background4 .content-container9 .blogs-container .blog-container .text-container p {
+  margin-top: 10px;
+  font-family: "roboto", sans-serif;
+  font-size: 0.813rem;
+  color: rgb(153, 153, 153);
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.white-background4 .content-container9 .instagram-container {
+  vertical-align: top;
+  display: inline-block;
+  width: 300px;
+  text-align: right;
+}
+@media screen and (max-width: 599px) {
+  .white-background4 .content-container9 .instagram-container {
+    margin-top: 50px;
+    margin-left: -10px;
+  }
+}
+.white-background4 .content-container9 .instagram-container h3 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  text-align: right;
+  margin-right: 180px;
+}
+.white-background4 .content-container9 .instagram-container .img-container {
+  margin-left: 20px;
+}
+@media screen and (max-width: 599px) {
+  .white-background4 .content-container9 .instagram-container .img-container {
+    margin-left: 0px;
+  }
+}
+.white-background4 .content-container9 .instagram-container .img-container .img {
+  display: inline-block;
+  background-image: url("Pictures/instagram/1.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 88px;
+  height: 88px;
+  margin: 1px;
+}
+.white-background4 .content-container9 .instagram-container .img-container .first {
+  background-image: url("Pictures/instagram/1.jpg");
+}
+.white-background4 .content-container9 .instagram-container .img-container .second {
+  background-image: url("Pictures/instagram/2.jpg");
+}
+.white-background4 .content-container9 .instagram-container .img-container .third {
+  background-image: url("Pictures/instagram/3.jpg");
+}
+.white-background4 .content-container9 .instagram-container .img-container .fourth {
+  background-image: url("Pictures/instagram/4.jpg");
+}
+.white-background4 .content-container9 .instagram-container .img-container .fifth {
+  background-image: url("Pictures/instagram/5.jpg");
+}
+.white-background4 .content-container9 .instagram-container .img-container .sixth {
+  background-image: url("Pictures/instagram/6.jpg");
+}
+.white-background4 .content-container9 .instagram-container .img-container .seventh {
+  background-image: url("Pictures/instagram/7.jpg");
+}
+.white-background4 .content-container9 .instagram-container .img-container .eighth {
+  background-image: url("Pictures/instagram/8.jpg");
+}
+.white-background4 .content-container9 .instagram-container .img-container .ninth {
+  background-image: url("Pictures/instagram/9.jpg");
+}
+.white-background4 .content-container9 .instagram-container p {
+  font-family: "roboto", sans-serif;
+  font-size: 0.813rem;
+  color: rgb(51, 51, 51);
+  font-style: italic;
+  font-weight: lighter;
+  margin-right: 165px;
+  margin-top: 20px;
+}
+.white-background4 .content-container9 hr {
+  margin-top: 40px;
+  height: 1px;
+  background-color: rgb(153, 153, 153);
+  border: none;
+}
+.white-background4 .content-container9 footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.white-background4 .content-container9 footer h3 {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+}
+.white-background4 .content-container9 footer .red {
+  margin-left: 5px;
+  display: inline;
+  color: rgb(243, 129, 129);
 }/*# sourceMappingURL=main.css.map */

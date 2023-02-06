@@ -132,6 +132,41 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+////////REUSABLE/////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
+.intro-h1 {
+  margin-top: 70px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.5rem;
+  color: rgb(51, 51, 51);
+}
+.intro-h2 {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+.intro-hr {
+  margin-top: 40px;
+  height: 3px;
+  width: 70px;
+  color: red;
+  background-color: red;
+  border: none;
+}
+.intro-txt {
+  display: inline-block;
+  width: 70%;
+  margin-top: 40px;
+  font-family: "roboto", sans-serif;
+  font-size: 0.938rem;
+  color: rgb(153, 153, 153);
+  line-height: 1.5;
+}
+
 ////////FIRST PAGE/////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
@@ -148,14 +183,13 @@ table {
   margin-left: auto;
   margin-right: auto;
   @media screen and (max-width: 1200px) {
-    width: 100vw;
+    height: 100vh;
   }
 
   .content-container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    height: 900px;
 
     .header-container {
       clear: both;
@@ -179,50 +213,35 @@ table {
       }
       .navigation-on {
         display: inline-block;
+        width: 50px;
       }
       nav {
         margin-top: 40px;
         display: inline-block;
 
-        width: calc(100% - 160px);
+        width: calc(100% - 120px);
         text-align: right;
 
-        @media screen and (max-width: 800px) {
-          margin-top: 20px;
-          display: block;
-          margin-left: 0px;
-          width: 100%;
-        }
-
-        @media screen and (max-width: 800px) {
-          margin-top: 20px;
-          display: block;
-          margin-left: 0px;
-          width: 100%;
-        }
-        @media screen and (max-width: 600px) {
-          margin-top: 100px;
-          text-align: center;
-        }
-
         a {
-          font-size: 15px;
+          font-size: 0.938rem;
           margin: 20px;
           text-decoration: none;
           color: white;
           font-family: "Montserrat", sans-serif;
           font-size: 0.9rem;
-          @media screen and (max-width: 600px) {
-            margin-top: 50px;
-            margin: 0 auto;
-            display: block;
-            width: 40%;
-            margin-bottom: 50px;
-            font-size: 30px;
-            img {
-              width: 50px;
-              height: 50px;
-            }
+        }
+        .navigation-img {
+          display: inline-block;
+        }
+        @media screen and (max-width: 730px) {
+          a {
+            display: none;
+          }
+          .media-search {
+            display: inline-block;
+          }
+          .media-chart {
+            display: inline-block;
           }
         }
 
@@ -232,29 +251,28 @@ table {
           padding-bottom: 10px;
         }
       }
-    }
-    @media screen and (max-width: 600px) {
-      .navigation-on {
-        width: calc(100% - 150px);
-        text-align: right;
+
+      @media screen and (max-width: 730px) {
+        nav {
+          width: calc(100% - 120px);
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 20px;
+        }
         .navigation-img {
           display: inline-block;
-          margin-top: 20px;
+          margin-top: 10px;
+          margin-right: 30px;
           display: inline-block;
-          background-image: url("pictures/x.png");
+          background-image: url("pictures/hamburger.svg");
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
-          width: 30px;
-          height: 30px;
+          width: 20px;
+          height: 20px;
         }
       }
-
-      .hide-when-navigation-on {
-        display: none;
-      }
     }
-
     .center-content {
       width: 100%;
       text-align: center;
@@ -272,8 +290,8 @@ table {
           font-size: 3rem;
           margin-top: 130px;
         }
-        @media screen and (max-width: 600px) {
-          margin-top: 80px;
+        @media screen and (max-width: 620px) {
+          margin-top: 50px;
         }
         @media screen and (max-width: 480px) {
           font-size: 2rem;
@@ -336,6 +354,9 @@ table {
       @media screen and (max-width: 720px) {
         margin-top: 100px;
         text-align: center;
+      }
+      @media screen and (max-width: 620px) {
+        margin-top: 50px;
       }
 
       .animation-content {
@@ -415,36 +436,6 @@ table {
     margin-right: auto;
     text-align: center;
 
-    .intro-h1 {
-      margin-top: 70px;
-      font-family: "Kaushan Script", cursive;
-      font-size: 24px;
-      color: rgb(51, 51, 51);
-    }
-    .intro-h2 {
-      margin-top: 20px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 30px;
-      font-weight: bold;
-      color: rgb(51, 51, 51);
-    }
-    hr {
-      margin-top: 40px;
-      height: 3px;
-      width: 70px;
-      color: red;
-      background-color: red;
-      border: none;
-    }
-    p {
-      display: inline-block;
-      width: 70%;
-      margin-top: 40px;
-      font-family: "roboto", sans-serif;
-      font-size: 15px;
-      color: rgb(153, 153, 153);
-      line-height: 1.5;
-    }
     .intro-pictures {
       position: relative;
       margin-top: 90px;
@@ -689,27 +680,6 @@ table {
     text-align: center;
     height: 100%;
 
-    .intro-h1 {
-      margin-top: 100px;
-      font-family: "Kaushan Script", cursive;
-      font-size: 24px;
-      color: rgb(51, 51, 51);
-    }
-    .intro-h2 {
-      margin-top: 20px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 30px;
-      font-weight: bold;
-      color: rgb(51, 51, 51);
-    }
-    hr {
-      margin-top: 40px;
-      height: 3px;
-      width: 70px;
-      color: red;
-      background-color: red;
-      border: none;
-    }
     .sevices {
       margin-top: 40px;
       font-size: 0;
@@ -765,7 +735,7 @@ table {
             margin-top: 23px;
             margin-left: 20px;
             font-family: "Montserrat", sans-serif;
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: bold;
             color: rgb(51, 51, 51);
           }
@@ -775,7 +745,7 @@ table {
             margin-top: 20px;
             margin-left: 20px;
             font-family: "roboto", sans-serif;
-            font-size: 14px;
+            font-size: 0.875rem;
             line-height: 1.5;
           }
         }
@@ -822,29 +792,8 @@ table {
     margin-right: auto;
     height: 900px;
     position: relative;
-
-    .intro-h1 {
-      display: inline-block;
-      margin-top: 100px;
-      font-family: "Kaushan Script", cursive;
-      font-size: 24px;
-      color: rgb(51, 51, 51);
-    }
-    .intro-h2 {
-      margin-top: 20px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 30px;
-      font-weight: bold;
-      color: rgb(51, 51, 51);
-    }
-    hr {
-      margin-top: 40px;
-      height: 3px;
-      width: 70px;
-      color: red;
-      background-color: red;
-      border: none;
-    }
+    margin-top: -5px;
+    display: inline-block;
 
     .phone-img {
       display: inline-block;
@@ -855,7 +804,7 @@ table {
       width: 600px;
       height: 600px;
       position: absolute;
-      top: 35%;
+      top: 35.9%;
       left: 50%;
 
       transform: translate(-50%);
@@ -882,37 +831,7 @@ table {
     margin-right: auto;
     text-align: center;
     height: 100%;
-    .intro-h1 {
-      display: inline-block;
-      margin-top: 100px;
-      font-family: "Kaushan Script", cursive;
-      font-size: 24px;
-      color: rgb(51, 51, 51);
-    }
-    .intro-h2 {
-      margin-top: 20px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 30px;
-      font-weight: bold;
-      color: rgb(51, 51, 51);
-    }
-    hr {
-      margin-top: 40px;
-      height: 3px;
-      width: 70px;
-      color: red;
-      background-color: red;
-      border: none;
-    }
-    p {
-      display: inline-block;
-      width: 70%;
-      margin-top: 40px;
-      font-family: "roboto", sans-serif;
-      font-size: 15px;
-      color: rgb(153, 153, 153);
-      line-height: 1.5;
-    }
+
     .content-container-midle {
       margin-top: 50px;
       font-size: 0;
@@ -998,10 +917,10 @@ table {
               margin-top: 5px;
               display: inline-block;
               width: 70%;
-              font-size: 20px;
+
               vertical-align: top;
               font-family: "Montserrat", sans-serif;
-              font-size: 14px;
+              font-size: 0.875rem;
               font-weight: bold;
               color: rgb(51, 51, 51);
               @media screen and (max-width: 380px) {
@@ -1053,9 +972,12 @@ table {
             border-top: none;
 
             p {
+              color: rgb(153, 153, 153);
+              line-height: 1.5;
+
               width: 90%;
               font-family: "roboto", sans-serif;
-              font-size: 15px;
+              font-size: 0.938rem;
               height: 130px;
               overflow: auto;
               margin-top: 0;
@@ -1112,6 +1034,7 @@ table {
       height: 500px;
     }
     .content-vertical {
+      margin-top: -20px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -1194,7 +1117,7 @@ table {
         width: calc(100% - 15% - 170px);
         display: inline-block;
         height: 150px;
-        font-size: 20px;
+        font-size: 0;
         text-align: left;
         @media screen and (max-width: 1050px) {
           width: calc(100% - 15% - 170px + 100px);
@@ -1221,18 +1144,18 @@ table {
         p {
           margin-left: 0;
           font-family: "roboto", sans-serif;
-          font-size: 24px;
+          font-size: 1.5rem;
           color: rgb(153, 153, 153);
           line-height: 1.5;
           @media screen and (max-width: 1200px) {
-            font-size: 20px;
+            font-size: 1.25rem;
           }
           @media screen and (max-width: 1050px) {
             margin-left: 30px;
           }
           @media screen and (max-width: 860px) {
             margin-left: 50px;
-            font-size: 15px;
+            font-size: 0.938rem;
           }
           @media screen and (max-width: 380px) {
             margin-left: 25px;
@@ -1240,6 +1163,7 @@ table {
         }
         hr {
           margin-left: 10px;
+
           height: 3px;
           width: 70px;
           color: red;
@@ -1259,11 +1183,11 @@ table {
         h1 {
           margin-top: 20px;
           margin-bottom: 20px;
-
+          margin-left: 10px;
           display: inline-block;
 
           font-family: "Kaushan Script", cursive;
-          font-size: 24px;
+          font-size: 1.5rem;
           color: rgb(51, 51, 51);
         }
       }
@@ -1281,36 +1205,6 @@ table {
     margin-right: auto;
     text-align: center;
 
-    .intro-h1 {
-      margin-top: 70px;
-      font-family: "Kaushan Script", cursive;
-      font-size: 24px;
-      color: rgb(51, 51, 51);
-    }
-    .intro-h2 {
-      margin-top: 20px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 30px;
-      font-weight: bold;
-      color: rgb(51, 51, 51);
-    }
-    hr {
-      margin-top: 40px;
-      height: 3px;
-      width: 70px;
-      color: red;
-      background-color: red;
-      border: none;
-    }
-    p {
-      display: inline-block;
-      width: 70%;
-      margin-top: 40px;
-      font-family: "roboto", sans-serif;
-      font-size: 15px;
-      color: rgb(153, 153, 153);
-      line-height: 1.5;
-    }
     .intro-pictures {
       position: relative;
       margin-top: 90px;
@@ -1418,7 +1312,7 @@ table {
         }
       }
 
-      .img-background-image-left:hover {
+      .left:hover {
         transform: translate(-10px, -10px);
         .img-background-image-white-effect {
           opacity: 1;
@@ -1430,7 +1324,7 @@ table {
           opacity: 1;
         }
       }
-      .img-background-image-midle:hover {
+      .midle:hover {
         transform: translate(-10px, -10px);
         .img-background-image-white-effect {
           opacity: 1;
@@ -1442,7 +1336,7 @@ table {
           opacity: 1;
         }
       }
-      .img-background-image-right:hover {
+      .right:hover {
         transform: translate(-10px, -10px);
         .img-background-image-white-effect {
           opacity: 1;
@@ -1457,7 +1351,7 @@ table {
       h3 {
         margin-top: 30px;
         font-family: "Montserrat", sans-serif;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: bolder;
         color: rgb(51, 51, 51);
       }
@@ -1465,7 +1359,7 @@ table {
         margin-top: 15px;
         font-family: "roboto";
         font-style: italic;
-        font-size: 15px;
+        font-size: 0.938rem;
         color: rgb(153, 153, 153);
         margin-top: 20px;
       }
@@ -1551,37 +1445,6 @@ table {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
-    .intro-h1 {
-      margin-top: 70px;
-      font-family: "Kaushan Script", cursive;
-      font-size: 24px;
-      color: rgb(51, 51, 51);
-    }
-    .intro-h2 {
-      margin-top: 20px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 30px;
-      font-weight: bold;
-      color: rgb(51, 51, 51);
-    }
-    hr {
-      margin-top: 40px;
-      height: 3px;
-      width: 70px;
-      color: red;
-      background-color: red;
-      border: none;
-    }
-    p {
-      display: inline-block;
-      width: 70%;
-      margin-top: 40px;
-      font-family: "roboto", sans-serif;
-      font-size: 15px;
-      color: rgb(153, 153, 153);
-      line-height: 1.5;
-    }
   }
 }
 ////////MULTI PICTURES////////////////////////////////////////////////
@@ -1904,7 +1767,7 @@ table {
         width: calc(100% - 15% - 170px);
         display: inline-block;
         height: 150px;
-        font-size: 20px;
+        font-size: 1.25rem;
         text-align: left;
         @media screen and (max-width: 1050px) {
           width: calc(100% - 15% - 170px + 100px);
@@ -1931,18 +1794,18 @@ table {
         p {
           margin-left: 0;
           font-family: "roboto", sans-serif;
-          font-size: 24px;
+          font-size: 1.5rem;
           color: rgb(153, 153, 153);
           line-height: 1.5;
           @media screen and (max-width: 1200px) {
-            font-size: 20px;
+            font-size: 1.25rem;
           }
           @media screen and (max-width: 1050px) {
             margin-left: 30px;
           }
           @media screen and (max-width: 860px) {
             margin-left: 50px;
-            font-size: 15px;
+            font-size: 0.938rem;
           }
           @media screen and (max-width: 380px) {
             margin-left: 25px;
@@ -1950,6 +1813,7 @@ table {
         }
         hr {
           margin-left: 10px;
+
           height: 3px;
           width: 70px;
           color: red;
@@ -1969,17 +1833,20 @@ table {
         h1 {
           margin-top: 20px;
           margin-bottom: 20px;
-
+          margin-left: 10px;
           display: inline-block;
 
           font-family: "Kaushan Script", cursive;
-          font-size: 24px;
+          font-size: 1.5rem;
           color: rgb(51, 51, 51);
         }
       }
     }
   }
 }
+///////WHAT PEOPLE SAY/////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
 .mauntain-background2 {
   background-image: url("Pictures/whatpeoplesay/Layer 53.jpg");
   background-size: cover;
@@ -1998,41 +1865,12 @@ table {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+
+    display: inline-block;
     height: 100%;
 
-    .intro-h1 {
-      display: inline-block;
-      margin-top: 100px;
-      font-family: "Kaushan Script", cursive;
-      font-size: 24px;
-      color: rgb(51, 51, 51);
-    }
-    .intro-h2 {
-      margin-top: 20px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 30px;
-      font-weight: bold;
-      color: rgb(51, 51, 51);
-    }
-    hr {
-      margin-top: 40px;
-      height: 3px;
-      width: 70px;
-      color: red;
-      background-color: red;
-      border: none;
-    }
-    p {
-      display: inline-block;
-      width: 70%;
-      margin-top: 40px;
-      font-family: "roboto", sans-serif;
-      font-size: 15px;
-      color: rgb(153, 153, 153);
-      line-height: 1.5;
-    }
     .clients {
-      margin-top: 40px;
+      margin-top: 100px;
       font-size: 0;
       width: 100%;
       display: block;
@@ -2088,7 +1926,7 @@ table {
             margin-top: 23px;
             margin-left: 40px;
             font-family: "Montserrat", sans-serif;
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: bold;
             color: rgb(51, 51, 51);
             @media screen and (max-width: 900px) {
@@ -2126,7 +1964,7 @@ table {
             margin-top: 10px;
             margin-left: 40px;
             font-family: "roboto", sans-serif;
-            font-size: 14px;
+            font-size: 0.875rem;
             line-height: 1.5;
             @media screen and (max-width: 900px) {
               margin-left: 80px;
@@ -2143,51 +1981,34 @@ table {
     }
   }
 }
+///////OUR STORIES/////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
 .white-background3 {
   .content-container6 {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    height: 830px;
+    height: 700px;
     @media screen and (max-width: 900px) {
-      height: 1600px;
+      height: 1700px;
     }
-    @media screen and (max-width: 446px) {
-      height: 1750px;
+    @media screen and (max-width: 450px) {
+      height: 1800px;
     }
 
-    .intro-h1 {
-      display: inline-block;
-      margin-top: 100px;
-      font-family: "Kaushan Script", cursive;
-      font-size: 24px;
-      color: rgb(51, 51, 51);
-    }
-    .intro-h2 {
-      margin-top: 20px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 30px;
-      font-weight: bold;
-      color: rgb(51, 51, 51);
-    }
-    hr {
-      margin-top: 40px;
-      height: 3px;
-      width: 70px;
-      color: red;
-      background-color: red;
-      border: none;
-    }
     .content-container-midle {
       font-size: 0;
       margin-top: 40px;
+
       .content {
-        text-align: center;
+        text-align: left;
+
         display: inline-block;
         width: calc(33.33% - 30px);
         height: 100px;
-        font-size: 20px;
+        font-size: 1.25rem;
         @media screen and (max-width: 900px) {
           width: 100%;
         }
@@ -2202,8 +2023,10 @@ table {
         margin: 0 auto;
         padding-bottom: 20px;
         border-bottom: solid 1px rgb(153, 153, 153);
+        text-align: left;
         @media screen and (max-width: 900px) {
           width: 60%;
+          margin-top: 50px;
         }
       }
       .img {
@@ -2231,7 +2054,7 @@ table {
 
       h3 {
         font-family: "Montserrat", sans-serif;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: bold;
         color: rgb(51, 51, 51);
       }
@@ -2239,13 +2062,17 @@ table {
         display: inline-block;
         margin-top: 20px;
         font-family: "roboto", sans-serif;
-        font-size: 15px;
+        font-size: 0.938rem;
         color: rgb(153, 153, 153);
         line-height: 1.5;
         vertical-align: bottom;
         margin-bottom: 3px;
       }
-
+      @media screen and (max-width: 900px) {
+        .icons {
+          text-align: center;
+        }
+      }
       .icon {
         display: inline-block;
         background-repeat: no-repeat;
@@ -2277,13 +2104,13 @@ table {
         h3 {
           margin-top: 10px;
           font-family: "Montserrat", sans-serif;
-          font-size: 30px;
+          font-size: 1.875rem;
           font-weight: bold;
           color: white;
         }
         p {
           font-family: "roboto", sans-serif;
-          font-size: 15px;
+          font-size: 0.938rem;
           color: white;
           margin-top: 0px;
           font-weight: lighter;
@@ -2292,6 +2119,9 @@ table {
     }
   }
 }
+///////MAP/////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
 .mauntain-background3 {
   background-image: url("Pictures/map/Layer 59.jpg");
   background-size: cover;
@@ -2323,7 +2153,7 @@ table {
     h3 {
       margin-top: 10px;
       font-family: "Montserrat", sans-serif;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: bold;
       color: rgb(243, 129, 129);
     }
@@ -2337,12 +2167,325 @@ table {
     }
   }
 }
+///////LAST PAGE/////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
 .white-background4 {
   .content-container9 {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    height: 830px;
+
+    font-size: 0;
+    margin-top: 80px;
+    @media screen and (max-width: 599px) {
+      text-align: left;
+    }
+    .mogo-lorem {
+      width: 95%;
+    }
+    .folowers-container {
+      display: inline-block;
+      width: 40%;
+      text-align: left;
+      @media screen and (max-width: 1100px) {
+        width: 100%;
+        margin-left: 20px;
+        margin-bottom: 50px;
+      }
+      h3 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.875rem;
+        font-weight: bold;
+        color: rgb(204, 204, 204);
+      }
+      p {
+        margin-top: 40px;
+        font-family: "roboto", sans-serif;
+        font-size: 0.938rem;
+        color: rgb(153, 153, 153);
+        line-height: 1.5;
+      }
+      .number-of-folowers {
+        .number {
+          display: inline-block;
+          font-family: "Montserrat", sans-serif;
+          font-size: 1.125rem;
+          font-weight: bold;
+          color: rgb(51, 51, 51);
+        }
+        .text {
+          margin-left: 5px;
+          display: inline-block;
+          font-family: "Montserrat", sans-serif;
+          font-size: 0.875rem;
+          font-weight: 400;
+          color: rgb(51, 51, 51);
+        }
+      }
+      hr {
+        margin-top: 20px;
+        height: 1px;
+        background-color: rgb(153, 153, 153);
+        border: none;
+      }
+      .follow-us {
+        margin-top: 20px;
+        .follow {
+          margin-top: 0px;
+          display: inline-block;
+          font-family: "roboto", sans-serif;
+          font-size: 0.938rem;
+          color: rgb(153, 153, 153);
+          font-weight: light;
+          font-style: italic;
+          vertical-align: top;
+          margin-top: 5px;
+        }
+        .icon-img {
+          margin-left: 10px;
+          display: inline-block;
+          background-size: auto;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 20px;
+          height: 20px;
+        }
+        .facebook {
+          background-image: url("Pictures/followus/facebook.png");
+        }
+        .twitter {
+          background-image: url("Pictures/followus/twitter.png");
+        }
+
+        .instagram {
+          background-image: url("Pictures/followus/instagram.png");
+        }
+        .pinterest {
+          background-image: url("Pictures/followus/pinterest.png");
+        }
+        .google {
+          background-image: url("Pictures/followus/google plus.png");
+        }
+        .youtube {
+          background-image: url("Pictures/followus/youtube.png");
+        }
+        .dribbble {
+          background-image: url("Pictures/followus/dribbble.png");
+        }
+
+        .tumblr {
+          background-image: url("Pictures/followus/tumblr.png");
+        }
+      }
+      form {
+        margin-top: 40px;
+        input[type="text"],
+        select {
+          width: 230px;
+          height: 40px;
+          display: inline-block;
+          border: 1px solid #ccc;
+
+          box-sizing: border-box;
+          font-family: "roboto", sans-serif;
+          font-size: 0.938rem;
+          color: rgb(204, 204, 204);
+          font-weight: light;
+          font-style: italic;
+          padding-left: 10px;
+        }
+
+        input[type="submit"] {
+          width: 150px;
+          height: 40px;
+          background-color: rgb(149, 225, 211);
+          color: white;
+          font-family: "Montserrat", sans-serif;
+          font-size: 0.875rem;
+          font-weight: bold;
+
+          border: none;
+          @media screen and (max-width: 380px) {
+            width: 230px;
+          }
+        }
+      }
+    }
+    .blogs-container {
+      width: 30%;
+      display: inline-block;
+      vertical-align: top;
+      @media screen and (max-width: 1100px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 599px) {
+        width: 100%;
+      }
+      h3 {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.875rem;
+        font-weight: bold;
+        color: rgb(51, 51, 51);
+        text-align: left;
+        margin-left: 20px;
+      }
+
+      .blog-container {
+        margin-bottom: 30px;
+        width: 100%;
+        font-size: 0;
+        @media screen and (max-width: 1100px) {
+          margin-bottom: 0px;
+        }
+        .img {
+          display: inline-block;
+
+          background-size: auto;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 120px;
+          height: 80px;
+          margin-left: 20px;
+        }
+        .first {
+          background-image: url("Pictures/blogs/1.jpg");
+        }
+        .second {
+          background-image: url("Pictures/blogs/2.jpg");
+        }
+        .third {
+          background-image: url("Pictures/blogs/3.jpg");
+        }
+        .text-container {
+          vertical-align: top;
+
+          text-align: left;
+          width: calc(100% - 140px);
+          display: inline-block;
+          line-height: 1.5;
+          h3 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: rgb(51, 51, 51);
+            margin-bottom: 0;
+          }
+          p {
+            margin-top: 10px;
+            font-family: "roboto", sans-serif;
+            font-size: 0.813rem;
+            color: rgb(153, 153, 153);
+            margin-left: 20px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .instagram-container {
+      vertical-align: top;
+      display: inline-block;
+      width: 300px;
+      text-align: right;
+      @media screen and (max-width: 599px) {
+        margin-top: 50px;
+        margin-left: -10px;
+      }
+
+      h3 {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.875rem;
+        font-weight: bold;
+        color: rgb(51, 51, 51);
+        text-align: right;
+        margin-right: 180px;
+      }
+      .img-container {
+        margin-left: 20px;
+        @media screen and (max-width: 599px) {
+          margin-left: 0px;
+        }
+        .img {
+          display: inline-block;
+          background-image: url("Pictures/instagram/1.jpg");
+          background-size: auto;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 88px;
+          height: 88px;
+          margin: 1px;
+        }
+        .first {
+          background-image: url("Pictures/instagram/1.jpg");
+        }
+        .second {
+          background-image: url("Pictures/instagram/2.jpg");
+        }
+
+        .third {
+          background-image: url("Pictures/instagram/3.jpg");
+        }
+
+        .fourth {
+          background-image: url("Pictures/instagram/4.jpg");
+        }
+
+        .fifth {
+          background-image: url("Pictures/instagram/5.jpg");
+        }
+        .sixth {
+          background-image: url("Pictures/instagram/6.jpg");
+        }
+
+        .seventh {
+          background-image: url("Pictures/instagram/7.jpg");
+        }
+
+        .eighth {
+          background-image: url("Pictures/instagram/8.jpg");
+        }
+
+        .ninth {
+          background-image: url("Pictures/instagram/9.jpg");
+        }
+      }
+      p {
+        font-family: "roboto", sans-serif;
+        font-size: 0.813rem;
+        color: rgb(51, 51, 51);
+        font-style: italic;
+        font-weight: lighter;
+        margin-right: 165px;
+        margin-top: 20px;
+      }
+    }
+    hr {
+      margin-top: 40px;
+      height: 1px;
+      background-color: rgb(153, 153, 153);
+      border: none;
+    }
+    footer {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      h3 {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 0.875rem;
+        font-family: "Montserrat", sans-serif;
+        color: rgb(51, 51, 51);
+      }
+      .red {
+        margin-left: 5px;
+        display: inline;
+        color: rgb(243, 129, 129);
+      }
+    }
   }
 }
